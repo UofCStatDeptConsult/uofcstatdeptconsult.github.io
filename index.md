@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Home
+title: Statistical Consulting Program
 permalink: /
 ---
-#### Heading
-* Test
+#### Objectives
+* Educational training
+* Service to the university community
