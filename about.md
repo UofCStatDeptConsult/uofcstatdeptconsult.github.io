@@ -3,7 +3,7 @@ layout: page
 title: 
 permalink: /about/
 ---
-### Webpages
+### Related links
 * [Statistics Department](https://www.stat.uchicago.edu/)
 * [Consulting Program](https://www.stat.uchicago.edu/consulting/)
 
