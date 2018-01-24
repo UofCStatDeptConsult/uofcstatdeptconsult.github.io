@@ -10,6 +10,6 @@ permalink: /
 ### Related links
 * [About the consulting program](https://uofcstatdeptconsult.github.io/about/)
 * [Consulting request form](http://www.stat.uchicago.edu/consulting/clients/php/index.shtml)
-* [The Statistics Consulting Program](https://www.stat.uchicago.edu/consulting/)
+* [Webpage of the Consulting Program](https://www.stat.uchicago.edu/consulting/), Department of Statistics, University of Chicago
 * [The Statistics Department](https://www.stat.uchicago.edu/), University of Chicago
 
