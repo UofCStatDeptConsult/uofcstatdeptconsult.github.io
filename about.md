@@ -9,6 +9,6 @@ Consultation is provided by graduate students of the department with guidance fr
 Assistance is available in the areas of applied probability, statistical design, choice and application of statistical models, statistical computation and simulation methods, analysis of data, and interpretation of results. 
 
 ### Related links
-* [The Consulting Program](https://www.stat.uchicago.edu/consulting/), Department of Statistics, University of Chicago
-* [Consulting request form](http://www.stat.uchicago.edu/consulting/clients/php/index.shtml)
+* [The Consulting Program](https://stat.uchicago.edu/about/consulting/), Department of Statistics, University of Chicago
+* [Consulting request form](https://www.stat.uchicago.edu/consulting/clients/request/)
 
