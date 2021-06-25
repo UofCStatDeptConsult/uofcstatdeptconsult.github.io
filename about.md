@@ -10,5 +10,5 @@ Assistance is available in the areas of applied probability, statistical design,
 
 ### Related links
 * [The Consulting Program](https://stat.uchicago.edu/about/consulting/), Department of Statistics, University of Chicago
-* [Consulting request form](https://www.stat.uchicago.edu/consulting/clients/request/)
+* [Consulting request form](https://stat.uchicago.edu/about/consulting/)
 
