@@ -1,0 +1,43 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ site.baseurl }}">
+          {{ site.title }}
+        </a>
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+
+  <ul>
+    <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
+    <li><a href="/about/" {% if page.url == "/about/" %}class="active"{% endif %}>About the workshop</a></li>
+    <li><a href="/consult/" {% if page.url == "/consult/" %}class="active"{% endif %}>Our team</a></li>
+  </ul>
+
+      <hr>
+      <a class="sidebar-nav-item{% if page.url == "/contact/" %}class="active"{% endif %}" href="/consult/">Contact us/ Schedule a consult</a>
+      <a class="sidebar-nav-item{% if page.url == "/consult/" %}class="active"{% endif %}" href="/consult/">Consulting Resources</a>
+      <a class="sidebar-nav-item{% if page.url == "/stat/" %}class="active"{% endif %}" href="/stat/">Statistical Resources</a>
+        <ul>
+    <li><a href="/stat/hypothesis_testing/" {% if page.url == "/stat/hypothesis_testing/" %}class="active"{% endif %}>Hypothesis Testing</a></li>
+        <li><a href="/stat/glms/" {% if page.url == "/consult/" %}class="active"{% endif %}>Generalized Linear Models</a></li>
+<li><a href="/stat/inference/" {% if page.url == "/consult/" %}class="active"{% endif %}>Inference in linear models</a></li>
+ <li><a href="/stat/unsupervised/" {% if page.url == "/consult/" %}class="active"{% endif %}>Unsupervised Methods</a></li>
+    <li><a href="/stat/visualization" {% if page.url == "/" %}class="active"{% endif %}>Visualization</a></li>
+     <li><a href="/stat/prediction/" {% if page.url == "/consult/" %}class="active"{% endif %}>Prediction</a></li>
+          <li><a href="/stat/interpretation/" {% if page.url == "/consult/" %}class="active"{% endif %}>Interpretation of Results</a></li>
+    <li><a href="/stat/timeseries" {% if page.url == "/consult/" %}class="active"{% endif %}>Time Series </a></li>
+
+  </ul>
+        <hr>
+        <a class="sidebar-nav-item{% if page.url == "/archives/" %}class="active"{% endif %}" href="/consult/">Examples/ Previous Cases</a>
+        
+    </nav>
+
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+  </div>
+</div>
