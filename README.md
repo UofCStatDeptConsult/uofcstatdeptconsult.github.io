@@ -1,5 +1,6 @@
 # BlackDoc
 
+<<<<<<< HEAD
 ![Jekyll version](https://img.shields.io/badge/Jekyll-3.x-brightgreen.svg?style=flat-square)
 
 BlackDoc is a two-column [Jekyll](http://jekyllrb.com) theme that's ideal for websites that require a master-detail layout for viewing of content. It's based on [Poole](http://getpoole.com), the Jekyll butler, and the [Hyde](http://hyde.getpoole.com) theme.
@@ -124,3 +125,7 @@ Open sourced under the [MIT license](LICENSE.md).
 ## Thanks
 
 Thanks to [@mdo](https://twitter.com/mdo) for creating the awesome [Poole](http://getpoole.com) project.
+=======
+The consulting program has a github webpage at   
+https://uofcstatdeptconsult.github.io 
+>>>>>>> f27e31f089baccdf87fde5c88881335a2963590d
