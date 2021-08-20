@@ -6,7 +6,7 @@ title: "About the Consulting Workshop"
 The Statistical Consulting Program is a __free Statistics clinic operated by the Department of Statistics at the University of Chicago for the members of the UChicago community__.
 
 
-![name of the image]({{ site.baseurl }}images/Classical-statistics-versus-statistical-learning-collision-of-thought-styles1-e1452609111146.jpeg)
+![name of the image]({{ site.baseurl }}/images/Classical-statistics-versus-statistical-learning-collision-of-thought-styles1-e1452609111146.jpeg)
 
 
 
