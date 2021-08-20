@@ -55,7 +55,7 @@ To find the right hypothesis test, we need to select the right "ingredients". Th
 
 + __Question 1: What type of data do I have?__
     + Categorical Data [Contingency Tables]()
-    + Continuous Data: [t-tests]({{ "" }}{% link _pages/hypothesis2.md %}), [Anova]({{ "" }}{% link _pages/hypothesis2.md %})
+    + Continuous Data: [t-tests]({{ "" }}{% link _pages/hypothesis2.md %}), [Anova]({{ "" }}{% link _pages/anova.md %})
 
 
 + __Question 2:  Can I assume my data points are independent?__
@@ -67,7 +67,7 @@ To find the right hypothesis test, we need to select the right "ingredients". Th
   + If there are multiple hypotheses, then you will need to correct for [multiple hypothesis testing]({{ "" }}{% link _pages/mhs.md %}).
 
 + __Question 4:  How many datapoints do I have?__
-  + This will help you determine whether or not you will need a [non-parametric model]().
+  + This will help you determine whether or not you will need a [non-parametric hypothesis test]({{ "" }}{% link _pages/nonparametrictests.md %}).
 
 __Prospective Measurements__ :Finally, if you haven't done your measurements yet and you're looking to assess how many samples you would need to answer your question, do look at our page on  [power analysis]({{ "" }}{% link _pages/power.md %}).
 
