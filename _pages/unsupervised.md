@@ -3,6 +3,7 @@ layout: page
 title: Unsupervised Learning
 permalink: /stat/unsupervised/
 ---
+*Based on the “Statistical Consulting Cheatsheet” by Prof. Kris Sankaran*
 
 UNDER CONSTRUCTION
 

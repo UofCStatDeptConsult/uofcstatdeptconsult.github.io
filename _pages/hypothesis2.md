@@ -3,7 +3,7 @@ layout: page
 title: Hypothesis Testing - The t-test
 permalink: /stat/hypothesis_testing2/
 ---
-
+*Based on the “Statistical Consulting Cheatsheet” by Prof. Kris Sankaran*
 
 If I had to make a bet for which test was used the most on any given day,
 I'd bet it's the t-test. There are actually several variations, which are used to

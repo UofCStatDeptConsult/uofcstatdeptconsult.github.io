@@ -4,6 +4,8 @@ title: Generalized Linear Models
 permalink: /stat/glms/
 ---
 
+*Based on the “Statistical Consulting Cheatsheet” by Prof. Kris Sankaran*
+
 
 Linear models provide the basis for most inference in multivariate settings. We
 won't even begin to try to cover this topic comprehensively. There are entire

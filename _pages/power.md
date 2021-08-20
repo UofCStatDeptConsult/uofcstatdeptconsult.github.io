@@ -3,6 +3,7 @@ layout: page
 title: Hypothesis Testing - Power Analysis
 permalink: /stat/power/
 ---
+*Based on the “Statistical Consulting Cheatsheet” by Prof. Kris Sankaran*
 
 Before performing an experiment, __it is important to get a rough sense of how
 many samples will need to be collected in order for the follow-up analysis to have

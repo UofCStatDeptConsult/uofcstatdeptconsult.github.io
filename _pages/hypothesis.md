@@ -3,6 +3,7 @@ layout: page
 title: Hypothesis Testing - an Overview
 permalink: /stat/hypothesis_testing/
 ---
+*Based on the “Statistical Consulting Cheatsheet” by Prof. Kris Sankaran*
 
 Many problems in consulting can be treated as elementary testing problems.
 First, let's review some of the philosophy of hypothesis testing. Testing provides a principled framework for filtering away implausible scientific claims.
