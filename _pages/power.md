@@ -16,8 +16,7 @@ funding.
 
 
 Traditionally, power analysis have been done by deciding in advance upon the
-type of statistical test to apply to the collected data and then using basic sta-
-tistical theory to work out exactly the number of samples required to reject the
+type of statistical test to apply to the collected data and then using basic statistical theory to work out exactly the number of samples required to reject the
 null when the signal has some assumed strength.
  For example, if the true data distribution is assumed to be  $$ N(\mu, \sigma^2)$$ and we are testing against the null   $$ N(0, \sigma^2) $$
 using a one-sample t-test,
