@@ -65,5 +65,5 @@ To find the right hypothesis test, we need to answer a minimum of four questions
 + __Question 4:  How many datapoints do I have?__
   + This will help you determine whether or not you will need a [non-parametric model]().
 
-
+If you're looking for a [power analysis]({{ "" }}{% link _pages/power.md %}).
 
