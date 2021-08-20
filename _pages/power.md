@@ -26,8 +26,8 @@ the probability that the observed mean will be above the t-test rejection
 threshold. The size of the signal is assumed known (smaller signals require larger
 sample sizes to detect). Of course this is the quantity of interest in the
 study, and if it were known, there would be no point in doing the study:
-+ The idea though is to get a __ rough estimate of the number of samples required
-for a few different signal strengths. __
++ The idea though is to get a __rough estimate of the number of samples required
+for a few different signal strengths.__
 + Sometimes, __a pilot study__ has been conducted previously, which can give __an approximate
 range__ for the signal strength to expect.
 + We can also use similar studies in the literature to determine what a "reasonable effect size"
