@@ -23,8 +23,8 @@ using a one-sample t-test,
 then the fact that $$ \bar{X} = \frac{\sum_{i=1}^n X_i }{N} \sim N(\mu, \frac{\sigma^2}{N}) $$
 can be used to analytically calculate
 the probability that the observed mean will be above the t-test rejection
-threshold. The size of the signal is assumed known (smaller signals require larger
-sample sizes to detect). Of course this is the quantity of interest in the
+threshold. __The size of the signal $$ \mu$$ is assumed known (smaller signals require larger
+sample sizes to detect)__. Of course this is the quantity of interest in the
 study, and if it were known, there would be no point in doing the study:
 + The idea though is to get a __rough estimate of the number of samples required
 for a few different signal strengths.__
