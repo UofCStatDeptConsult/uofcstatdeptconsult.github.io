@@ -6,88 +6,95 @@ permalink: /stat/glms/
 
 
 Linear models provide the basis for most inference in multivariate settings. We
-won't even begin to try to cover this topic comprehensively { there are entire
+won't even begin to try to cover this topic comprehensively. There are entire
 course sequences that only cover linear models. But, we'll try to highlight the
 main regression-related ideas that are useful to know during consulting.
+
 This section is focused more on the big-picture of linear regression and when
 we might want to use it in consulting. We defer a discussion of inference in
-linear models to Section 5.
-10We usually want this so we can calculate a confidence interval, see the next bullet.
-17
-Some past consulting problems:
- GLM
+linear models to the next section.
 
 
-4.1 Linear regression
+## 1. Linear regression
+
+### 1.1. The Model
+
 Linear regression learns a linear function between covariates and a response, and
 is popular because there are well-established methods for performing inference
 for common hypothesis.
- Generally, model-fitting procedures suppose that there is a single variable
-Y of special interest. The goal of a supervised analysis is to determine the
-relationship between many other variables (called covariates), X1; : : : ;Xp
-and Y . Having a model Y = f (X1; : : : ;Xp) can be useful for many
+
+
++ Generally, model-fitting procedures suppose that there is a single variable
+$$Y$$ of special interest. The goal of a supervised analysis is to determine the
+relationship between many other variables (called covariates), $$X_1, \cdots X_p$$
+and $$Y$$ . Having a model $$ Y = f(X_1, \cdots X_p)$$ can be useful for many
 reasons, especially (1) improved scientific understanding (the functional
-form of f is meaningful) and (2) prediction, using f learned on one set of
+form of f is meaningful) and (2) prediction, using $$f$$ learned on one set of
 data to guess the value of Y on a new collection of X's.
- Linear models posit that the functional form f is linear in the X1; : : : ;Xp.
-This is interpreted geometrically by saying that the change in Y that
-occurs when Xj is changed by some amount (and all other covariates are
-held fixed) is proportional to the change in Xj . E.g., when p = 1, this
-means the scatterplot of X1 against Y can be well-summarized by a line.
+
++  Linear models posit that the functional form $$f$$ is linear in the $$X_1, \cdots X_p$$.
+This is interpreted geometrically by saying that the change in $$Y$$ that
+occurs when $$X_j$$ is changed by some amount (and __all other covariates are
+held fixed__) is proportional to the change in $$X_j$$ . E.g., when $$p = 1$$, this
+means the scatterplot of $$X_1$$ against $$Y$$ can be well-summarized by a line.
  A little more formally, we suppose we have observed samples indexed by
-i, where xi 2 Rp collects the covariates for the ith sample, and yi is the
+$$i$$, where $$x_i \in \mathbb{R}^p$$ collects the covariates for the $$i$$th sample, and $$y_i$$ is the
 associated observed response. A regression model tries to find a parameter
-fi 2 Rp so that
-yi = xTi
-fi + i (1)
-is plausible, where i are drawn i.i.d. from N
-􀀀
-0; 2
+$$\beta \in \mathbb{R}^p$$ so that
+<br>
+
+$$  Y_i + x_i^T \beta +\epsilon_i$$
+
+is plausible, where $$i$$ are drawn i.i.d. from $$N(0, \sigma^2) $$.
 
 for some (usually
-unknown) 2. The fitted value for fi after running a linear regression is
-denoted ^ fi.
- Compared to other forms of model fitting, a major advantage of of linear
+unknown) $$\sigma^2$$. The fitted value for $$\beta$$ after running a linear regression is
+denoted $$\hat{\beta}$$ .
+
++ Compared to other forms of model fitting, a major advantage of of linear
 models is that inference is usually relatively straightforwards { we can do
-tests of significance / build confidence intervals of the strength of asso-
-ciation across dierent X's as well as comparison between models with
-dierent sets of variables.
+tests of significance / build confidence intervals of the strength of association across different $$X$$'s as well as comparison between models with
+different sets of variables.
  The linear assumption is not well-suited to binary, count, or categorical
-responses Y , because it the model might think the response Y belongs to
+responses $$Y$$ , because it the model might think the response $$Y$$ belongs to
 some range that's not even possible (think of extrapolating a linear in a
-scatterplot when the y-axis values are all between 0 and 1). In these situ-
-ations, it is necessary to apply generalized linear models (GLMs) (GLMs).
-Fortunately, many of the ideas of linear models (method
+scatterplot when the y-axis values are all between 0 and 1). In these situations, it is necessary to apply generalized linear models (GLMs) (GLMs).
+Fortunately, many of the ideas of linear models (methods for inference in
+particular) have direct analogs in the GLM setting.
 
 
-When is linear regression useful in consulting?
- In a consulting setting, regression is useful for understanding the associa-
-tion between two variables, controlling for many others. This is basically
-a rephrasing of point (2) above, but it's the essential interpretation of lin-
-ear regression coecients, and it's this interpretation that many research
+###  When is linear regression useful in consulting?
+
++  In a consulting setting, regression is useful for understanding the association between two variables, controlling for many others. This is basically
+a rephrasing of point (2) above, but it's the essential interpretation of linear regression coecients, and it's this interpretation that many research
 studies are going after.
- Sometimes a client might originally come with a testing problem, but
-might want help extending it to account for additional structure or co-
-variates. In this setting, it can often be useful to propose a linear model
+
++ Sometimes a client might originally come with a testing problem, but
+might want help extending it to account for additional structure or covariates. In this setting, it can often be useful to propose a linear model
 instead: it still allows inference, but it becomes much easier to encode
 more complex structure.
-What are some common regression tricks useful in consulting?
- Adding interactions: People will often ask about adding interactions in
+
+
+### What are some common regression tricks useful in consulting?
+
++ __Adding interactions:__ People will often ask about adding interactions in
 their regression, but usually from an intuition about the non-quantitative
-meaning of the word \interaction." It's important to clarify the quanti-
-tative meaning: Including an interaction term between X1 and X2 in a
-regression of these variables onto Y means that the slope of the relation-
-ship between X1 on Y will be dierent depending on the value of X2.
-For example, if X2 can only take on two values (say, A and B), then the
-relationship between X1 and Y will be linear with slope fi1A in the case
-that X2 is A and fi1B otherwise11. When X2 is continuous, then there is
-a continuum of slopes depending on the value of X2: fi1 + fi12X2. See
+meaning of the word "interaction." It's important to clarify the quanti-
+tative meaning: Including an interaction term between $$X_1$$ and $$X_2$$ in a
+regression of these variables onto $$Y$$ means that the slope of the relation-
+ship between $$X_1$$ on $$Y$$ will be different depending on the value of $$X_2$$.
+For example, i f$$X_2$$ can only take on two values (say, A and B), then the
+relationship between $$X_1$$ and $$Y$$ will be linear with slope $$\beta_{1A}$$ in the case
+that $$X_2$$ is A and $$\beta_{1B}$$  otherwise11. When $$X_2$$ is continuous, then there is
+a continuum of slopes depending on the value of $$X_2: \beta_1 + \beta_{1\times2}X_2$$. See
 Figure 5 for a visual interpretation of interactions.
- Introducing basis functions: The linearity assumption is not as restrictive
+
++ __Introducing basis functions:__ The linearity assumption is not as restrictive
 as it seems, if you can cleverly apply basis functions. Basis functions are
 functions like polynomials (or splines, or wavelets, or trees...) which you
-can mix together to approximate more complicated functions, see Figure
-6. Linear mixing can be done with linear models.
+can mix together to approximate more complicated functions, see the figure.
+
+Linear mixing can be done with linear models.
 To see why this is potentially useful, suppose we want to use time as a
 predictor in a model (e.g., where Y is number of species j present in the
 sample), but that species population doesn't just increase or decrease lin-
@@ -95,14 +102,15 @@ early over time (instead, it's some smooth curve). Here, you can introduce
 a spline basis associated with time and then use a linear regression of the
 response onto these basis functions. The fitted coecients will define a
 mean function relating time and the response.
- Derived features: Related to the construction of basis functions, it's often
+
++ __Derived features:__ Related to the construction of basis functions, it's often
 possible to enrich a linear model by deriving new features that you imagine
-might be related to Y . The fact that you can do regression onto variables
+might be related to $$Y$$ . The fact that you can do regression onto variables
 
 
 
 Figure 5: In the simplest setting, an interaction between a continuous and binary
-variable leads to two dierent slopes for the continuous variable. Here, we are
+variable leads to two different slopes for the continuous variable. Here, we are
 showing the scatterplot (xi1; yi) pairs observed in the data. We suppose there
 is a binary variable that has also been measured, denoted xi2, and we shade
 in each point according to its value for this binary variable. Apparently, the
@@ -117,13 +125,13 @@ can construct new variables corresponding to the \slope at the beginning,"
 or \slope at the end" or max, or min, ... across the time series. Of course,
 deciding which variables might actually be relevant for the regression will
 depend on domain knowledge.
- One trick { introducing random eects { is so common that it gets it's
+ One trick --- introducing random effects --- is so common that it gets it's
 own section. Basically, it's useful whenever you have a lot of levels for a
 particular categorical vector.
 
 
 
-4.2 Diagnostics
+### 1.2. Diagnostics
 How can you assess whether a linear regression model is appropriate? Many
 types of diagnostics have been proposed, but a few of the most common are,
  Look for structure in residuals: According to equation 1, the amount
@@ -220,7 +228,7 @@ in the model .
 i.e. the log-odds are approximately linear.
 
 
-4.4 Poisson regression
+### 4.  Poisson regression
 Poisson regression is a type of generalized linear model that is often applied
 when the responses yi are counts (i.e., yi 2 f0; 1; 2; : : : ; g).
  As in logistic regression, one motivation for using this model is that using
@@ -231,7 +239,7 @@ Poisson distribution with rate  draws integers with probabilities
 
 
 
-4.5 Psueo-Poisson and Negative Binomial regression
+### 5 Pseudo-Poisson and Negative Binomial regression
 Pseudo-Poisson and negative binomial regression are two common strategies for
 addressing overdispersion in count data.
 In the pseudo-Poisson setup, a new parameter ' is introduced that sets the
