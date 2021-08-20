@@ -154,7 +154,7 @@ The Kolmogorov-Smirnov (KS) test is a test for either (1) comparing two groups
 of real-valued measurements or (2) evaluating the goodness-of-fit of a collection
 of real-valued data to a prespecified reference distribution.
 
-+ In its two-sample variant, the empirical CDFs (ECFs) for each group
++  In its two-sample variant, the empirical CDFs (ECFs) for each group
 are calculated. The discrepancy is measured by the largest absolute gap
 between the two ECDFs. This is visually represented in the next figure.
 
@@ -174,7 +174,7 @@ CDF (blue line) is consistent with this reference CDF, again by measuring the
 largest gap between the pair.
 .</font>*
 
-+ The distribution of this gap under the null hypothesis that the two groups
++ The distribution of this gap under the null hypothesis that the two groups
 have the same ECDF was calculated using an asymptotic approximation,
 and this is used to provide p-values.
 
