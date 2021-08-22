@@ -45,7 +45,7 @@ Distance-based clustering has two main ingredients:  (1) a clustering algorithm,
 
 __Step 1: Selecting an Algorithm.__ Common distance-based methods include:
 
-<img src="{{ site.baseurl }}images/kmeans.png" alt="drawing" width="250" style="float: right; margin-left: 1em;"/>
+<img src="{{ site.baseurl }}/images/kmeans.png" alt="drawing" width="250" style="float: right; margin-left: 1em;"/>
 
 + __K-means:__ This builds K-clusters in an iterative way, attempting to minimize the sum of within-cluster distances (so that the clusters are compact). Since all directions are treated symmetrically, the resulting clusters tend
 to be spherical. Similarly, since clusters are treated symmetrically, they tend to all be approximately the same size.
@@ -60,14 +60,14 @@ of a pair of cluster has to be defined somehow: common choices include
 __"complete-link" merging (say that the distance between two clusters is the
 distance between the furthest away pair across clusters)__ or __"average-link"
 (say the distance is the average pairwise distance between clusters)__. \\
-<img src="{{ site.baseurl }}images/hierarchical.png" alt="drawing" width="350" style="float: right; margin-left: 1em;"/>
+<img src="{{ site.baseurl }}/images/hierarchical.png" alt="drawing" width="350" style="float: right; margin-left: 1em;"/>
 An advantage of this approach is that it provides a full tree relating samples. The more branch length a pair of samples shares, the more similar they
 are. In particular, this approach avoids the problem of choosing K, though
 clusters can be chosen by cutting the tree at some horizontal level. The
 main drawback of this approach is that it does not it does not scale as
 well as fixed-K methods.
 
-<img src="{{ site.baseurl }}images/spectral2.png" alt="drawing" width="250" style="float: right; margin-left: 1em;"/>
+<img src="{{ site.baseurl }}/images/spectral2.png" alt="drawing" width="250" style="float: right; margin-left: 1em;"/>
 + __Spectral clustering:__ This method is "spectral", because it relies on the eigenvector decomposition of the Laplacian of the data: $$L= D - A$$ (where $$A$$ is a similarity matrix between datapoints, and $$D$$ the associated degree) to do a dimensionality reduction of the data before clustering.\\
 The main  advantage of this method is that it is non-linear. 
 
@@ -124,7 +124,7 @@ distance on the binary types.
 
 
 
-<h3 id="subsubsection-11"> Probabilistic clustering techniques </h3>
+<h3 id="subsubsection-12"> 1.2. Probabilistic clustering techniques </h3>
 
 In contrast, probabilistic clustering techniques assume latent cluster indicator $$z_i$$ ( e.g  $$z_i =k$$ if sample $$i$$ belongs to cluster $$k$$(  for each sample and define a likelihood model (which must itself be fit)
 assuming these indicators are known. Inference of these unknown $$z_i$$'s provides
@@ -132,7 +132,7 @@ the sample assignments, while the parameters fitted in the likelihood model can
 be used to characterize the clusters. Some of the most common probabilistic
 clustering models are:
 + __Gaussian mixture model:__ The generative model here supposes that there
-are $$K$$ means $$\mu_{1; :\cdots ; K}$$. Each sample $$i$$ is assigned to one of $$K$$ categories
+are $$K$$ means $$\mu_{1; \cdots ; K}$$. Each sample $$i$$ is assigned to one of $$K$$ categories
 (call it $$z_i = k$$), and then the observed sample is drawn from a gaussian
 with mean $$\mu_k$$ and covariance $$\Sigma$$  (which doesn't depend on the class assignment). This model can be considered the probabilistic analog of K-means
 (K means actually emerges as the small-variance limit).
@@ -152,17 +152,17 @@ probability under the markov model.
 
 
 
-<h2 id="subsection-2">  Low-dimensional representations </h2>  
+<h2 id="subsection-2"> 2.  Low-dimensional representations </h2>  
 
 + __Principle Components Analysis__
 + __Factor analysis__
 + __Distance based methods__
 
 
-<h2 id="subsection-3">    Networks </h2>
+<h2 id="subsection-3">    3. Networks </h2>
 
 
 
 
-<h2 id="subsection-4">  Mixtures </h2>
+<h2 id="subsection-4"> 4.  Mixtures </h2>
 
