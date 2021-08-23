@@ -32,7 +32,7 @@ relationship between many other variables (called covariates), $$X_1, \cdots X_p
 and $$Y$$ . Having a model $$ Y = f(X_1, \cdots X_p)$$ can be useful for many
 reasons, especially (1) improved scientific understanding (the functional
 form of f is meaningful) and (2) prediction, using $$f$$ learned on one set of
-data to guess the value of Y on a new collection of X's.
+data to guess the value of $$Y$$ on a new collection of $$X$$'s.
 
 +  Linear models posit that the functional form $$f$$ is linear in the $$X_1, \cdots X_p$$.
 This is interpreted geometrically by saying that the change in $$Y$$ that
@@ -72,8 +72,7 @@ a rephrasing of point (2) above, but it's the essential interpretation of linear
 studies are going after.
 
 + Sometimes a client might originally come with a testing problem, but
-might want help extending it to account for additional structure or covariates. In this setting, it can often be useful to propose a linear model
-instead: it still allows inference, but it becomes much easier to encode
+might want help extending it to account for additional structure or covariates. In this setting, it can often be useful to propose a linear model instead: it still allows inference, but it becomes much easier to encode
 more complex structure.
 
 
@@ -109,6 +108,8 @@ mean function relating time and the response.
 possible to enrich a linear model by deriving new features that you imagine
 might be related to $$Y$$ . The fact that you can do regression onto variables
 
+
+<img src="{{ site.baseurl }}/images/nullpermut.png" alt="drawing1" width="400"/>
 
 
 Figure 5: In the simplest setting, an interaction between a continuous and binary
