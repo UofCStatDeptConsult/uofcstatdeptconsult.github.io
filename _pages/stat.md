@@ -5,7 +5,7 @@ permalink: "/stat/"
 ---
 
 This page provides a list of statistical resources for our student consultants and clients.
-We have tried to create a few reference pages to help with the analysis of the problem --- we are in the process of building and further adding to this website. These notes are a web-adaptation of the "Statistical Consulting Cheatsheet" by [Prof. Kris Sankaran](http://krisrs1128.github.io/personal-site/), at the university of Madison-Wisconsin, who graciously accepted to lend his material. We also refer to some more extensive external links that can be useful for more involved analysis.
+We have began creating a few reference pages that can help with the analysis of the client's problem --- we are in the process of building and further adding to this website. These notes are a web-adaptation of the "Statistical Consulting Cheatsheet" by [Prof. Kris Sankaran](http://krisrs1128.github.io/personal-site/), at the university of Madison-Wisconsin, who graciously accepted to lend his material. We also refer to some more extensive external links that can be useful for more involved analysis.
 
 
 
