@@ -16,8 +16,15 @@ This section is focused more on the big-picture of linear regression and when
 we might want to use it in consulting. We defer a discussion of inference in
 linear models to the next section.
 
+Depending on the type of data that you have at-hand, you might opt for:
++ <a href="#linear-1">Linear Regression</a>, if your output $$y$$ is a continuous variable.
++ <a href="#logistic-1">Logistic Regression</a>, if your output  $$y$$ is a binary variable (eg 0/1).
++ <a href="#multinom-1">Multinomial Regression</a>, if your output  $$y$$  is a categorical variable with more than 2 categories (eg 0/1/2).
++ <a href="ordinal-1">Ordinal Regression</a>, if your output  $$y$$ is a categorical variable with more than 2 categories (eg 0/1/2), and there is a natural ordering of the classes (eg 0<1<2) --- this is appropriate when the output is a survey scale for instance.
++ <a href="#poisson-1">Poisson Regression</a>, if your output  $$y$$ consists of count data.
 
-## 1. Linear regression
+
+<h2 id="linear-1">   1. Linear regression</h2>
 
 ### 1.1. The Model
 
@@ -25,8 +32,7 @@ Linear regression learns a linear function between covariates and a response, an
 is popular because there are well-established methods for performing inference
 for common hypothesis.
 
-
-+ Generally, model-fitting procedures suppose that there is a single variable
++ Generally, model-fitting procedures suppose that there is a single variable
 $$Y$$ of special interest. The goal of a supervised analysis is to determine the
 relationship between many other variables (called covariates), $$X_1, \cdots X_p$$
 and $$Y$$ . Having a model $$ Y = f(X_1, \cdots X_p)$$ can be useful for many
@@ -97,7 +103,7 @@ can mix together to approximate more complicated functions, see the figure.
 
 Linear mixing can be done with linear models.
 To see why this is potentially useful, suppose we want to use time as a
-predictor in a model (e.g., where Y is number of species j present in the
+predictor in a model (e.g., where $$Y$$ is number of species j present in the
 sample), but that species population doesn't just increase or decrease lin-
 early over time (instead, it's some smooth curve). Here, you can introduce
 a spline basis associated with time and then use a linear regression of the
@@ -109,131 +115,237 @@ possible to enrich a linear model by deriving new features that you imagine
 might be related to $$Y$$ . The fact that you can do regression onto variables
 
 
+<p style="color:grey;font-size:11px;" align="center">
 <img src="{{ site.baseurl }}/images/nullpermut.png" alt="drawing1" width="400"/>
-
-
-Figure 5: In the simplest setting, an interaction between a continuous and binary
+<i>Figure 5: In the simplest setting, an interaction between a continuous and binary
 variable leads to two different slopes for the continuous variable. Here, we are
-showing the scatterplot (xi1; yi) pairs observed in the data. We suppose there
-is a binary variable that has also been measured, denoted xi2, and we shade
+showing the scatterplot ( x_{i1}; y_i ) pairs observed in the data. We suppose there
+is a binary variable that has also been measured, denoted x_{i2}$, and we shade
 in each point according to its value for this binary variable. Apparently, the
-relationship between x1 and y depends on the value of y (when in the pink group,
+relationship between x_1 and y depends on the value of y (when in the pink group,
 the slope is less. This can exactly be captured by introducing an interaction
-term between x1 and x2. In cases where x2 is not binary, we would have a
-continuous of slopes between x1 and y { one for each value of x2.
-that aren't just the ones that were collected originally might not be ob-
-vious to your client. For example, if you were trying to predict whether
-someone will have a disease12 based on time series of some lab tests, you
+term between x_1 and x_2. In cases where x_2  is not binary, we would have a
+continuous of slopes between  x_1 and y – one for each value of  x_2.
+that aren't just the ones that were collected originally might not be obvious to your client. For example, if you were trying to predict whether
+someone will have a disease based on time series of some lab tests, you
 can construct new variables corresponding to the \slope at the beginning,"
 or \slope at the end" or max, or min, ... across the time series. Of course,
 deciding which variables might actually be relevant for the regression will
 depend on domain knowledge.
  One trick --- introducing random effects --- is so common that it gets it's
 own section. Basically, it's useful whenever you have a lot of levels for a
-particular categorical vector.
+particular categorical vector..</i>
+</p>
+
+
+
+
 
 
 
 ### 1.2. Diagnostics
 How can you assess whether a linear regression model is appropriate? Many
-types of diagnostics have been proposed, but a few of the most common are,
- Look for structure in residuals: According to equation 1, the amount
-that the predictions ^yi = xTi
-^  is o from yi (this dierence is called the
-residual ri = ^yi 􀀀 yi) should be about i.i.d. N
-􀀀
-0; 2
-
-. Whenever there
-is a systematic pattern in these residuals, the model is misspecied in
-some way. For example, if you plot the residuals over time and you nd
+types of diagnostics have been proposed, but a few of the most common are:
++ __Look for structure in residuals:__ According to equation 1, the amount
+that the predictions $$\hat{y}_i = x_i^T\beta$$ is off from $$y_i$$ (this difference is called the
+residual $$r_i = \hat{y}_i  - y_i$$) should be about i.i.d. $$N(0, \sigma^2) $$. Whenever there
+is a systematic pattern in these residuals, the model is misspecifed in
+some way. For example, if you plot the residuals over time and you find
 clumps that are all positive or negative, it means there is some unmeasured
-phenomena associated with these time intervals that in
-uences the average
-value of the responses. In this case, you would dene new variables for
-whether you are in one of these intervals, but the solution diers on a case-
+phenomena associated with these time intervals that influences the average
+value of the responses. In this case, you would define new variables for
+whether you are in one of these intervals, but the solution differs on a case-
 by-case basis. Other types of patterns to keep an eye out for: nonconstant
 spread (heteroskesdasticity), large outliers, any kind of discreteness (see
 Figure 7).
- Make a qq-plot of residuals: More generally than simply nding large
-outliers in the residuals, we might ask whether the residuals are plausibly
-drawn from a normal distribution. qq-plots give one way of doing this
-{ more often than not the tails are heavier than normal. Most people
-ignore this, but it can be benecial to consider e.g. robust regression or
-considering logistically (instead of normally) distributed errors.
- Calculate the leverage of dierent points: The leverage of a sample is a
-measure of how much the overall t would change if you took that point
-out. Points with very high leverage can be cause for concern { it's bad
-if your t completely depended on one or two observations only { and
-these high leverage points often turn out to be outliers. See Figure 8 for
-an example of this phenomenon. If you nd a few points have very high
-
-
-Figure 7: Some of the most common types of \structure" to watch out for in
+<p style="color:grey;font-size:11px;" align="center">
+<img src="{{ site.baseurl }}/images/outliers.png" alt="drawing1" width="400"/>
+<i>Figure 7: Some of the most common types of \structure" to watch out for in
 residual plots are displayed here. The top left shows how residuals should appear
 { they look essentially i.i.d. N (0; 1). In the panel below, there is nonconstant
 variance in the residuals, the one on the bottom has an extreme outlier. The
 panel on the top-right seems to have means that are far from zero in a structured
 way, while the one below has some anomalous discreteness.
 leverage, you might consider throwing them out. Alternatively, you could
-consider a robust regression method.
- Simulate data from the model: This is a common practice in the Bayesian
-community (\posterior predictive checks"), though I'm not aware if people
-do this much for ordinary regression models. The idea is simple though
-{ simulate data from xTi
-^  + i, where i  N
-􀀀
-0; ^2
-
-and see whether the
-new yi's look comparable to the original yi's. Characterizing the ways
-they don't match can be useful for modifying the model to better t the
+consider a robust regression method.</i>
+</p>
+
++ __Make a qq-plot of residuals:__ More generally than simply finding large
+outliers in the residuals, we might ask whether the residuals are plausibly
+drawn from a normal distribution. qq-plots give one way of doing this
+ – more often than not the tails are heavier than normal. Most people
+ignore this, but it can be beneficial to consider e.g. robust regression or
+considering logistically (instead of normally) distributed errors.
+
++ __Calculate the leverage of different points:__ The leverage of a sample is a
+measure of how much the overall fit would change if you took that point
+out. Points with very high leverage can be cause for concern { it's bad
+if your fit completely depended on one or two observations only { and
+these high leverage points often turn out to be outliers. See Figure 8 for
+an example of this phenomenon. If you find a few points have very high
+
+
+
+
+<p style="color:grey;font-size:11px;" align="center">
+<img src="{{ site.baseurl }}/images/outliers22.png" alt="drawing1" width="400"/>
+<i>Figure 8: The leverage of a sample can be thought of as the amount of influence
+it has in a fpt. Here, we show a scatterplot onto which we fit a regression line.
+The cloud near the origin and the one point in the bottom right represent the
+observed samples. The blue line is the regression fit when ignoring the point
+on the bottom right, while the pink line is the regression including that point.
+Evidently, this point in the bottom right has very high leverage  – in fact, it
+reverses the sign of the association between X and Y . This is also an example of
+how outliers (especially outliers in the X direction) can have very high leverage.</i>
+</p>
+
+
++  __Simulate data from the model:__ This is a common practice in the Bayesian
+community (''posterior predictive checks"), though I'm not aware if people
+do this much for ordinary regression models. The idea is simple though: draw samples from $$N(x_i^T \hat{\beta}, \hat{\sigma}^2)$$ and see whether the
+new $$y_i$$'s look comparable to the original $$y_i$$'s. Characterizing the ways
+they don't match can be useful for modifying the model to better fit the
 data.
-Some diagnostics-related questions from past quarters,
- Evaluating regression model
-4.3 Logistic regression
+
+<h2 id="logistic-1">  2 - Logistic regression </h2>
+
+### 2.1. The Model
+
 Logistic regression is the analog of linear regression that can be used whenever
-the response Y is binary (e.g., patient got better, respondent answered \yes,"
+the response $$Y$$ is binary (e.g., patient got better, respondent answered "yes,"
 email was spam).
-22
 
+In linear regression, the response $$y$$ are directly used in a model of the
+form $$y_i = x^T_i\beta+ \epsilon $$. 
 
-In linear regression, the response y are directly used in a model of the
-form yi = xTi
- + i. In logistic regression, we now want a model between
-the xi and the unknown probabilities of the two classes when we're at xi:
-p (xi) and 1 􀀀 p (xi).
- The observed value of yi corresponding to xi is modeled as being drawn
-from a coin 
-ip with probability p (xi).
- If we had t an ordinary linear regression model to the yi, we might get
-tted responses ^yi outside of the valid range [0; 1], which in addition to
+In logistic regression, we now want a model between
+the $$x_i$$ and the unknown probabilities of the two classes when we're at $$x_i$$:
+$$p(x_i)$$ and $$1 - p (x_i$$).
+ The observed value of $$y_i$$ corresponding to $$x_i$$ is modeled as being drawn
+from a coin flip with probability $$p (x_i)$$.
+ If we had ffit an ordinary linear regression model to the $$y_i$$, we might get fitted responses $$\hat{y}_i$$ outside of the valid range [0; 1], which in addition to
 being confusing is bad modeling.
- Logistic regression instead models the log-odds transformation to the p (xi)
-respectively). Concretely, it assumes the model
-p (y1; : : : ; yn) =
-Yn
-i=1
-p (xi)I(yi=1) (1 􀀀 p (xi))I(yi=0) (2)
-where we are approximating
-p (xi)  p (xi) :=
-1
-1 + exp
-􀀀
-􀀀xTi
-
- (3)
-Logistic regression ts the parameter  to maximize the likelihood dened
-in the model .
- An equivalent reformulation of the assumption is that log p(xi)
-1􀀀p(xi)  xTi
-,
+
+
+__The goal__ Logistic regression instead models the log-odds transformation to the $$p (x_i)$$. Concretely, it assumes the model:
+
+$$  p (y_1, y_2, \cdots, y_n)  = \prod_{i=1}^n p_\beta(x_i)^{1_{y_i=1}} (1- p_\beta(x_i))^{1_{y_i=0}}$$
+where we are approximating $$ p(x_i) \approx p_\beta(x_i)  = \frac{1}{1+ e^{-x_i^T\beta}} $$.
+
++ This is equivalent to saying that each observation $$y_i$$ is sampled from a Bernouilli whose probability is a function of $$x_i$$: $$ y_i \sim \text{Bernouilli}( p_\beta(x_i) )  $$.
+ogistic regression fits the parameter $$\beta$$ to maximize the likelihood defined
+in the model above .
++ An equivalent reformulation of the assumption is that $$\log(\frac{ p_\beta(x_i) }{1- p_\beta(x_i) }) = x_i^T \beta$$
 i.e. the log-odds are approximately linear.
++ Out of the box, the coecients fitted by logistic regression can be difficult to interpret. Perhaps the easiest way to interpret them is in terms
+of the relative risk, which gives an analog to the usual linear regression
+interpret "when the jth feature goes up by one unit, the expected response
+goes up by $$\beta_j$$." First, recall that the relative risk is defined as
+$$r = \frac{\mathbb{P}[Y=1|X] }{\mathbb{P}[Y=0|X]} $$
+which in logistic regression is approximated by $$ e^{x_i^T\beta} $$. If we increase
+the jth coordinate of $$x_i$$ (i.e., we replace $$x_i \leftarrow x_i +\delta$$  ), then this relative risk
+becomes $$r =  e^{x_i^T\beta}  e^{\delta^T\beta}   $$
+The interpretation is that the relative risk got multiplied by $$ e^{\beta_j}$$ we increased the jth covariate by one unit.
+
+<p style="color:grey;font-size:11px;" align="center">
+<img src="{{ site.baseurl }}/images/logreg.png" alt="drawing1" width="400"/>
+<i>Figure 9: An example of the type of approximation that logistic regression
+makes. The x-axis represent the value of the feature, and the y-axis encodes the
+binary 0 / 1 response. The purple marks are observed (xi; yi) pairs. Note that
+class 1 becomes more common when x is large. The pink line represents the
+"true" underlying class probabilities as a function of x, which we denote as p (x).
+This doesn't lie in the logistic family 1/(1+exp(-xB) , but it can be approximated by
+a member of that family, which is drawn in blue (this is the logistic regression fit).</i>
+</p>
 
 
-### 4.  Poisson regression
+
+### 2.2 Diagnostics
+
+While you could study the differences $$y_i - \hat{p}(x_i)$$, which would
+be analogous to linear regression residuals, it is usually more informative to
+study the Pearson or deviance residuals, which upweight small differences
+near the boundaries 0 and 1. These types of residuals take into account
+structure in the assumed bernoulli (coin-flipping) sampling model.
+ For ways to evaluate the classification accuracy of logistic regression models, see the section on [Prediction Evaluation]() and for an overview of formal inference, see the [section
+ Inference in GLM].
+
+<h2 id="multinom-1">  3 - Multinomial regression </h2>
+
+Multinomial regression is a generalization of logistic regression for when the
+response can take on one of $$K$$ categories (not just $$K = 2$$).
+ Here, we want to study the way the probabilities for each of the $$K$$ classes
+varies as x varies: $$p (y_i = j|x_i)$$ for each $$k = 1 \cdots K $$ Think of the
+responses $$y_i$$ as observations from a K-sided dice, and that different faces
+are more probable depending on the associated features xi.
+ The approximation of logisitc regression is replaced with 
+
+$$ p(y_i = k |c_i) \approx p_W(y_i=k|x_i )= \frac{\exp(w_k^Tx_i}{\sum_k \exp(w_k^Tx_i} }$$
+
+
+
+where the parameters $$w_1\cdots;w_K$$ govern the relationship between xi and
+the probabilities for different classes.
+ As is, this model is not identifiable (you can increase one of the wks and de-
+crease another, and end up with the exact same probabilities  $$p _W(y_i = j|x_i)$$.
+
+
+To resolve this, one of the classes (say the Kth, this is usually chosen to
+be the most common class) is chosen as a baseline, and we set $$w_K = 0$$.
+ Then the $$w_k$$s can be interpreted in terms of how a change in $$x_i$$ changes
+the probability of observing $$k$$ relative to the baseline $$K$$. That is, suppose
+we increase the $$j$$th variable by one unit, so that $$x_i \leftarrow x_i + \delta_{j} $$ . Then, the
+relative probability against class K changes according to 
+$$ p(y_i = k |c_i) \approx p_W(y_i=k|x_i )= \frac{\exp(w_k^Tx_i}{\sum_k \exp(w_k^Tx_i} }$$
+ 
+
+<h2 id="ordinal-1">  3 - Ordinal regression </h2>
+
+Sometimes we have K classes for the responses, but there is a natural ordering
+between them. For example, survey respondents might have chosen one of 6
+values along a likert scale. Multinomial regression is unaware of this additional
+ordering structure { a reasonable alternative in this setting is ordinal regression.
+ The basic idea for ordinal regression is to introduce a continuous latent
+variable zi along with K 􀀀 1 \cutpoints" 
+1; : : : ; 
+K􀀀1, which divides the
+real line into K intervals. When zi lands in the kth of these intervals, we
+observe yi = k.
+ Of course, neither the zi's nor the cutpoints 
+k are known, so they must
+be inferred. This can be done using the class frequencies of the observed
+yis though (many yi = k means the kth bin is large).
+ To model the in
+uence of covariates p (yi = kjxi), we suppose that zi =
+T xi + i. When i is Gaussian, we recover ordinal probit regression,
+and when i follows the logistic distribution13 we recover ordinal logistic
+regression.
+ An equivalent formulation of ordinal logistic regression models the \cu-
+mulative logits" as linear,
+log
+
+p (yi  k)
+1 􀀀 p (yi  k)
+
+= k + T xi: (26)
+Here, the k's control the overall frequencies of the k classes, while 
+controls the in
+uence of covariates on the response.
+ Outside of the latent variable interpretation, it's also possible to under-
+stand  in terms of relative risks. In particular, when we increase the jth
+coordinate by 1 unit, xi ! xi + j , the odds of class k relative to class
+k􀀀1 gets multiplied by exp (j ), for every pair of neighboring classes k􀀀1
+and k.
+
+
+<h2 id="poisson-1">    4.  Poisson regression </h2>
+
+### 4.1. The Model
+
+
+
 Poisson regression is a type of generalized linear model that is often applied
-when the responses yi are counts (i.e., yi 2 f0; 1; 2; : : : ; g).
+when the responses $$y_i$$ are counts (i.e., $$y_i \in \{ 0; 1; \cdots; \}$$.
  As in logistic regression, one motivation for using this model is that using
 ordinary logistic regression on these responses might yield predictions that
 are impossible (e.g., numbers below zero, or which are not integers).
@@ -242,27 +354,25 @@ Poisson distribution with rate  draws integers with probabilities
 
 
 
-### 5 Pseudo-Poisson and Negative Binomial regression
+###  4.2- Accounting for overdispersion : Pseudo-Poisson and Negative Binomial regression
 Pseudo-Poisson and negative binomial regression are two common strategies for
 addressing overdispersion in count data.
 In the pseudo-Poisson setup, a new parameter ' is introduced that sets the
-relative scale of the variance in comparison to the mean: Var (y) = 'E[y]. This
-is not associated with any real probability distribution, and the associated like-
-lihood is called a pseudolikelihood. However, ' can be optimized along with 
+relative scale of the variance in comparison to the mean: $$\mathbb{V}\text{ar} (y) = \mathbb{E}[y]$$. This
+is not associated with any real probability distribution, and the associated likelihood is called a pseudolikelihood. However, ' can be optimized along with 
 from the usual Poisson regression setup to provide a maximum pseudolikelihood
 estimate.
 In negative binomial regression, the Poisson likelihood is abandoned alto-
 gether in favor of the negative binomial likelihood. Recall that the negative bi-
-nomial (like the Poisson) is a distribution on nonnegative counts f0; 1; 2; : : : ; g.
+nomial (like the Poisson) is a distribution on nonnegative counts $$\{0, 1, 2,\cdots \}$$.
 It has two parameters, p and r,
-Pp;r [y = k] =
-
-k + r 􀀀 1
-k
-
-pk (1 􀀀 p)r (9)
-which can be interpreted as the number of heads that appeared before seeing r
-tails, when 
-ipping a coin with probability p of heads. More important than the
-specic form of the distribution is the fact that it has two parameters, which
-allow dierent variances even for the same mean,
+$$ \mathbb{P}[y=k] ={ k+r-1 \choose  k} p^k (1-p)^r$$
+which can be interpreted as the number of heads that appeared before seeing $$r$$
+tails, when flipping a coin with probability $$p$$ of heads. More important than the
+specific form of the distribution is the fact that it has two parameters, which
+allow different variances even for the same mean:
+
+$$\mathbb{E}_{p,r}[y] = \frac{pr}{1-p} $$
+
+$$\mathbb{V}\text{ar}_{p,r}[y] = \frac{pr}{(1-p)^2}  = \mathbb{E}_{p,r}[y]  + \frac{1}{2} \mathbb{E}_{p,r}[y]^2$$
+
