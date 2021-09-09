@@ -345,16 +345,49 @@ and k.
 
 
 Poisson regression is a type of generalized linear model that is often applied
-when the responses $$y_i$$ are counts (i.e., $$y_i \in \{ 0; 1; \cdots; \}$$.
+when the responses $$y_i$$ are counts (i.e., $$y_i \in \{ 0, 1, \cdots \}$$.
  As in logistic regression, one motivation for using this model is that using
 ordinary logistic regression on these responses might yield predictions that
 are impossible (e.g., numbers below zero, or which are not integers).
  To see where the main idea for this model comes from, recall that the
-Poisson distribution with rate  draws integers with probabilities
+Poisson distribution with rate  draws integers with probabilities:
+
+$$\mathbb{P}_{\lambda} [y=k |\lambda] = \frac{\lambda^k e^{-\lambda}}{k!} $$
+
+The idea of Poisson regression is to say that the different $$y_i$$ are drawn
+Poissons with rates that depend on the associated $$x_i$$.
+
+More specifically, we assume that the data have a joint likelihood:
+
+$$p(y_1, y_2, \cdots) = \prod_{i=1}^n \frac{\lambda(x_i)^{y_i} e^{-\lambda(x_i)}}{y_i!} $$
+
+and that the log of the rates are linear in the covariates:
+
+$$\log(\lambda(x_i)) = x_i^T \beta $$
+
+(modeling the logs as linear makes sure that the actual rates are always
+nonnegative, which is a requirement for the Poisson distribution).
+
+We think of different regions of the covariate space as having more or less
+counts on average, depending on this function  $$\lambda(x_i)$$. Moving from xi to
+$$x_i + \delta_j$$ multiplies the rate from  $$\lambda(x_i)$$ to $$\exp(\beta_j)  \lambda(x_i).$$
 
 
+### 4-2 Diagnostics. 
+As in logistic regression, it makes more sense to consider the deviance
+residuals when performing diagnostics.
 
-###  4.2- Accounting for overdispersion : Pseudo-Poisson and Negative Binomial regression
+In particular, a deficiency in Poisson regression models (which often motivates clients
+to show up to consulting) is that real data often exhibit overdipersion with respect the assumed Poisson model. The issue is that the mean and
+variance of counts in a Poisson model are tied together: if you sample
+from then the mean and variance of the associated counts are both $$\lambda$$. In
+real data, the variance is often larger than the mean, so while the Poisson
+regression model might do a good job approximating the mean  $$\lambda(x_i)$$ at
+$$x_i$$, the observed variance of the $$y_i$$ near $$x_i$$ might be much larger than
+$$\lambda (x_i)$$. This motivates the methods in following subsection .
+
+
+###  4.3- Accounting for overdispersion : Pseudo-Poisson and Negative Binomial regression
 Pseudo-Poisson and negative binomial regression are two common strategies for
 addressing overdispersion in count data.
 In the pseudo-Poisson setup, a new parameter ' is introduced that sets the
@@ -376,3 +409,27 @@ $$\mathbb{E}_{p,r}[y] = \frac{pr}{1-p} $$
 
 $$\mathbb{V}\text{ar}_{p,r}[y] = \frac{pr}{(1-p)^2}  = \mathbb{E}_{p,r}[y]  + \frac{1}{2} \mathbb{E}_{p,r}[y]^2$$
 
+In particular, for small $$r$$, the variance is much larger than the mean, while for
+large $$r$$, the variance is about equal to the mean (it reduces to the Poisson).
+For negative binomial regression, this likelihood  is substituted for the Poisson when doing regression, and the mean is allowed to depend on covariates.
+On the other hand, while the variance is no longer fixed to the mean, it must
+be the same across all data points. This likelihood model is not exactly a GLM
+(the negative binomial is not in the exponential family), but various methods
+for fitting it are available.
+
+
+There is a connection between the negative binomial and the Poisson that
+both illuminates potential sources of overdispersion and suggests new algorithms for fitting overdispersed data: the negative binomial can be interpreted as a
+``gamma mixture of Poissons." 
+
+More specifically, in the hierarchical model:
+
+$$ y | \lambda \sim \text{Poisson}(\lambda) $$
+
+$$  \lambda \sim \text{Gamma}(r, \frac{p}{1-p}) $$
+
+which draws a Poisson with a randomly chosen mean parameter, the marginal
+distribution of $$y$$ is exactly NegBin$$(r, p)$$. This suggests that one reason overdis-
+persed data might arise is that they are actually a mixture of true Poisson
+subpopulations, each with different mean parameters. This is also the starting point for Bayesian inference of overdispersed counts, which fit Poisson and
+Gamma distributions according to this hierarchical model.
