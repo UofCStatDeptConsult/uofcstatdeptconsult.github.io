@@ -223,7 +223,7 @@ the $$x_i$$ and the unknown probabilities of the two classes when we're at $$x_i
 $$p(x_i)$$ and $$1 - p (x_i$$).
  The observed value of $$y_i$$ corresponding to $$x_i$$ is modeled as being drawn
 from a coin flip with probability $$p (x_i)$$.
- If we had ffit an ordinary linear regression model to the $$y_i$$, we might get fitted responses $$\hat{y}_i$$ outside of the valid range [0; 1], which in addition to
+ If we had fit an ordinary linear regression model to the $$y_i$$, we might get fitted responses $$\hat{y}_i$$ outside of the valid range [0; 1], which in addition to
 being confusing is bad modeling.
 
 
@@ -280,7 +280,7 @@ responses $$y_i$$ as observations from a K-sided dice, and that different faces
 are more probable depending on the associated features xi.
  The approximation of logisitc regression is replaced with 
 
-$$ p(y_i = k |c_i) \approx p_W(y_i=k|x_i )= \frac{\exp(w_k^Tx_i}{\sum_k \exp(w_k^Tx_i} }$$
+$$ p(y_i = k |c_i) \approx p_W( y_i=k|x_i )= \frac{\exp(w_k^Tx_i)}{\sum_k \exp(w_k^Tx_i)} $$
 
 
 
@@ -294,48 +294,41 @@ To resolve this, one of the classes (say the Kth, this is usually chosen to
 be the most common class) is chosen as a baseline, and we set $$w_K = 0$$.
  Then the $$w_k$$s can be interpreted in terms of how a change in $$x_i$$ changes
 the probability of observing $$k$$ relative to the baseline $$K$$. That is, suppose
-we increase the $$j$$th variable by one unit, so that $$x_i \leftarrow x_i + \delta_{j} $$ . Then, the
+we increase the $$j$$th variable by one unit, so that $$ x_i \leftarrow x_i + \delta_j $$ . Then, the
 relative probability against class K changes according to 
-$$ p(y_i = k |c_i) \approx p_W(y_i=k|x_i )= \frac{\exp(w_k^Tx_i}{\sum_k \exp(w_k^Tx_i} }$$
+$$ p(y_i = k |c_i) \approx p_W(y_i=k|x_i )= \frac{\exp(w_k^Tx_i)}{\sum_k \exp(w_k^Tx_i).} $$
  
 
 <h2 id="ordinal-1">  3 - Ordinal regression </h2>
 
-Sometimes we have K classes for the responses, but there is a natural ordering
+Sometimes we have $$K$$ classes for the responses, but there is a natural ordering
 between them. For example, survey respondents might have chosen one of 6
 values along a likert scale. Multinomial regression is unaware of this additional
-ordering structure { a reasonable alternative in this setting is ordinal regression.
- The basic idea for ordinal regression is to introduce a continuous latent
-variable zi along with K 􀀀 1 \cutpoints" 
-1; : : : ; 
-K􀀀1, which divides the
-real line into K intervals. When zi lands in the kth of these intervals, we
-observe yi = k.
- Of course, neither the zi's nor the cutpoints 
-k are known, so they must
+ordering structure – a reasonable alternative in this setting is __ordinal regression.__
+
++ The basic idea for ordinal regression is to introduce a continuous latent
+variable $$z_i$$ along with $$K-1$$ "cutpoints" 
+ $$\gamma_1, \cdots, \gamma_{K-1}$$ which divides the
+real line into $$K$$ intervals. When $$z_i$$ lands in the $$k$$th of these intervals, we
+observe $$y_i = k$$.
++ Of course, neither the $$z_i$$'s nor the cutpoints  $$\gamma_k$$ are known, so they must
 be inferred. This can be done using the class frequencies of the observed
-yis though (many yi = k means the kth bin is large).
- To model the in
-uence of covariates p (yi = kjxi), we suppose that zi =
-T xi + i. When i is Gaussian, we recover ordinal probit regression,
-and when i follows the logistic distribution13 we recover ordinal logistic
+$$y_i$$s though (many  $$y_i = k$$ means the $$k$$th bin is large).
++ To model the influence of covariates $$p (y_i = k|x_i)$$, we suppose that $$x_i = \beta^Tx_i +\epsilon_i $$. When $$\epsilon_i$$ is Gaussian, we recover ordinal probit regression,
+and when $$\epsilon_i$$ follows the logistic distribution we recover ordinal logistic
 regression.
- An equivalent formulation of ordinal logistic regression models the \cu-
-mulative logits" as linear,
-log
-
-p (yi  k)
-1 􀀀 p (yi  k)
-
-= k + T xi: (26)
-Here, the k's control the overall frequencies of the k classes, while 
-controls the in
-uence of covariates on the response.
- Outside of the latent variable interpretation, it's also possible to under-
-stand  in terms of relative risks. In particular, when we increase the jth
-coordinate by 1 unit, xi ! xi + j , the odds of class k relative to class
-k􀀀1 gets multiplied by exp (j ), for every pair of neighboring classes k􀀀1
-and k.
+ An equivalent formulation of ordinal logistic regression models the ``cumulative logits" as linear
+
+$$ \log(\frac{p(y_i \leq k) }{1 - p(y_i \leq k)} )  = \alpha_k + \beta^T x_i. $$
+
+Here, the $$\alpha_k$$'s control the overall frequencies of the $$K$$ classes, while 
+$$\beta$$ controls the influence of covariates on the response.
++
+Outside of the latent variable interpretation, it's also possible to under-
+stand  $$\beta$$ in terms of relative risks. In particular, when we increase the $$j$$th
+coordinate by 1 unit, $$x_i \leftarrow x_i + \delta_j$$ , the odds of class $$k$$ relative to class
+k-11gets multiplied by  $$\exp(\beta_j)$$, for every pair of neighboring classes $$k-1$$
+and $$k$$.
 
 
 <h2 id="poisson-1">    4.  Poisson regression </h2>
@@ -350,7 +343,7 @@ when the responses $$y_i$$ are counts (i.e., $$y_i \in \{ 0, 1, \cdots \}$$.
 ordinary logistic regression on these responses might yield predictions that
 are impossible (e.g., numbers below zero, or which are not integers).
  To see where the main idea for this model comes from, recall that the
-Poisson distribution with rate  draws integers with probabilities:
+Poisson distribution with rate $$\lambda$$ draws integers with probabilities:
 
 $$\mathbb{P}_{\lambda} [y=k |\lambda] = \frac{\lambda^k e^{-\lambda}}{k!} $$
 
