@@ -8,7 +8,7 @@ highlighter:      rouge
 title:            Statistical Consulting Program
 tagline:          Stats
 description:      "Department of Statistics, University of Chicago"
-baseurl:          ""
+baseurl:          "https://uofcstatdeptconsult.github.io/"
 newbaseurl:        /
 url:              https://github.com/uofcstatdeptconsult.github.io
                   # the optional subpath of your site, e.g. "/my-jekyll-site/"
