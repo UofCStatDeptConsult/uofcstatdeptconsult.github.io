@@ -4,7 +4,7 @@ title: R Resources
 permalink: /stat/r/
 ---
 
-The preferred software for performing statistical analysis is __R__, an open-source, free software that is vastly used by the scientifica community to perform all sorts of analysis. If you are not familiar with __R__ and have to perform some flavour of data analysis, this language is definitely worth learning: the syntax is easy, and there are hundreds of additional libraries (~ which are like packages in Python) which will allow you to do your analysis swiftly and easily!
+The preferred software for performing statistical analysis is __R__, an open-source, free software that is vastly used by the scientific community to perform all sorts of analyses. If you are not familiar with __R__ and have to perform some flavour of data analysis, this language is definitely worth learning: the syntax is easy, and there are hundreds of additional libraries (~ which are like packages in Python) which will allow you to do your analysis swiftly and easily!
 
 ## Installing and Learning R
 
