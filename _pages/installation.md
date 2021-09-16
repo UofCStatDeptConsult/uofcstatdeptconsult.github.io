@@ -3,7 +3,6 @@ layout: page
 title: R Resources
 permalink: /stat/r/installation/
 ---
-*Based on the R-bootcamp class by Lan Huong Nguyen (Stanford), edited by Claire Donnat.*
 
 # [](#title) Software Installation
 
@@ -101,4 +100,9 @@ then use the Run Chunk button or press `Ctrl + Shift + Enter`
 You can find more on R Notebooks
 [here](http://rmarkdown.rstudio.com/r_notebooks.html ).
 
-[back]({{ "" }}{% link _pages/r.md %})
+[Back]({{ "" }}{% link _pages/r.md %}) 
+
+[Back to Main Subsection]({{ "" }}{% link _pages/stat.md %})
+
+
+*Based on the R-bootcamp class by Lan Huong Nguyen (Stanford), edited by Claire Donnat.*

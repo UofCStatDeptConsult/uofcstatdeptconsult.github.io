@@ -9,7 +9,7 @@ The preferred software for performing statistical analysis is __R__, an open-sou
 ## Installing and Learning R
 
 + For additional help on installing __R__, read the [following instructions]({{ "" }}{% link _pages/installation.md %}). 
-+ Here are a [few introductary slides]({{ "" }}{% link lectures/Lecture1_Intro.html %}) for understanding and getting started in R.
++ Here are a [few introductory slides]({{ "" }}{% link lectures/Lecture1_Intro.html %}) for understanding and getting started in R.
 + Our consultants have also started to put together a few resources for learning R. You can consult their tutorial by clicking on this <a href="{{ site.baseurl }}images/tutorial-summary.html">link </a>.
 
 ## Textbooks 
