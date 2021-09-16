@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Claire Donnat (cdonnat[at]uchicago.edu)" />
+  <meta name="author" content="based on the material for CME 195 by Lan Huong Nguyen (Stanford)" />
+  <title>Introduction to R</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="cme195.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Introduction to R</h1>
+    <h2 class="author">Claire Donnat (cdonnat[at]uchicago.edu)</h2>
+    <h2 class="author">based on the material for CME 195 by Lan Huong Nguyen (Stanford)</h2>
+</section>
+
+<section><section id="the-r-language" class="title-slide slide level1"><h1>The R language</h1></section><section id="what-is-r" class="slide level2">
+<h2>What is R?</h2>
+<ul>
+<li><p>R was created by Rob Gentleman and Ross Ihaka in 1994; it is based on the S language developed at Bell Labs by John Chambers (Stanford Statistics).</p></li>
+<li><p>It is <strong>an open-source language and environment</strong> for statistical computing and graphics.</p></li>
+</ul>
+<p><img src='Lecture1-figure/r_word_cloud.png' height='300' width='550'> </img></p>
+</section><section id="section" class="slide level2">
+<h2></h2>
+<ul>
+<li>R offers:
+<ul>
+<li>A simple and effective programming language.</li>
+<li>A data handling and storage facility.</li>
+<li>A suite of libraries for matrix computations.</li>
+<li>A large collection of tools for data analysis.</li>
+<li>Facilities for generating high-quality graphics and data display.</li>
+</ul></li>
+</ul>
+<p></br></p>
+<ul>
+<li>R is <strong>highly extensible</strong>, but remains <strong>a fully planned and coherent system</strong>, rather than an incremental accumulation of specific and inflexible tools.</li>
+</ul>
+</section><section id="who-uses-r" class="slide level2">
+<h2>Who uses R?</h2>
+<p>Traditionally, academics and researchers. However, recently R has expanded also to industry and enterprise market. Worldwide usage on log-scale:</p>
+<p><img src='Lecture1-figure/language_popularity.png' height="250" width="500"
+class="center"></img></p>
+<p>Source: <a href="http://pypl.github.io/PYPL.html" class="uri">http://pypl.github.io/PYPL.html</a></p>
+<p>The PYPL Index is created by analyzing how often language tutorials are searched on Google (generated using raw data from Google Trends).</p>
+</section><section id="why-should-you-learn-r" class="slide level2">
+<h2>Why should you learn R?</h2>
+<p>Pros:</p>
+<ul>
+<li>Open source and cross-platform.</li>
+<li>Created with statistics and data in mind; new ideas and methods in statistics usually appear in R first.</li>
+<li>Provides a wide range of high-quality packages for data analysis and visualization.</li>
+<li>Arguably, the most commonly used language by data scientists</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Performance/Scalability: low speed, poor memory management.</li>
+<li>Some packages are low-quality and provide no support.</li>
+<li>A unconventional syntax and a few unusual features compared to other languages.</li>
+</ul>
+</section><section id="a-few-alternatives-to-r" class="slide level2">
+<h2>A few alternatives to R:</h2>
+<ul>
+<li><strong>Python:</strong> fastest growing, general-purpose programming, with data science libraries.</li>
+<li><strong>SAS:</strong> used for statistical analysis; commercial and expensive, slower development.</li>
+<li><strong>SQL:</strong> designed for managing data held in a relational database management system.</li>
+<li><strong>MATLAB:</strong> proprietary, mostly for numerical computing, and matrix computations.</li>
+</ul>
+</section><section id="what-makes-r-good" class="slide level2">
+<h2>What makes R good?</h2>
+<ul>
+<li><p>R is an <strong>interpreted language</strong>, i.e. programs do not need to be compiled into machine-language instructions.</p></li>
+<li><p>R is <strong>object oriented</strong>, i.e. it can be extended to include non-standard data structures (<strong>objects</strong>). A generic function can act differently depending on what objects you passe to it.</p></li>
+<li><p>R supports <strong>matrix arithmetics</strong>.</p></li>
+<li><p>R packages can generate <strong>publication-quality</strong> plots, and <strong>interactive graphics</strong>.</p></li>
+<li><p>Many <strong>user-created R packages</strong> contain implementations of <strong>cutting edge statistics methods</strong>.</p></li>
+</ul>
+</section><section id="what-makes-r-good-1" class="slide level2">
+<h2>What makes R good?</h2>
+<p>As of September 29th 2018, there are 13,083 packages on <a href="https://cran.r-project.org/web/packages/index.html">CRAN</a>, 1,560 on <a href="https://www.bioconductor.org/">Bioconductor</a>, and many others on <a href="https://github.com/trending/r?since=weekly">github</a>)</p>
+<p><img src="Lecture1-figure/cran_packages.png" height="300" width="400"></img></p>
+<p>Source: <a href="http://blog.revolutionanalytics.com/2017/01/cran-10000.html">http://blog.revolutionanalytics.com/</a></p>
+</section><section id="other-useful-resources-for-learning-r" class="slide level2">
+<h2>Other useful resources for learning R</h2>
+<ul>
+<li><p><em>R in a nutshell</em> and introductory book by Joseph Adler - <em>R tutorial</em> (<a href="https://www.tutorialspoint.com/r/r_packages.htm" class="uri">https://www.tutorialspoint.com/r/r_packages.htm</a>)</p></li>
+<li><p><em>Advanced R</em> book by Hadley Wickham for intermediate programmers (<a href="http://adv-r.had.co.nz/Introduction.html" class="uri">http://adv-r.had.co.nz/Introduction.html</a>)</p></li>
+<li><p><code>swirl</code> R-package for interactive learning for beginners (<a href="http://swirlstats.com/" class="uri">http://swirlstats.com/</a>)</p></li>
+<li><p><code>Data Camp</code> courses for data science, R, python and more (<a href="https://www.datacamp.com/courses" class="uri">https://www.datacamp.com/courses</a>)</p></li>
+</ul>
+</section></section>
+<section><section id="setting-up-an-r-environment" class="title-slide slide level1"><h1>Setting up an R environment</h1></section><section id="installing-r" class="slide level2">
+<h2>Installing R</h2>
+<p></br></p>
+<p>R is open sources and cross platform (Linux, Mac, Windows).</p>
+<p></br></p>
+<p>To download it, go to the Comprehensive R Archive Network <a href="https://cran.cnr.berkeley.edu/">CRAN</a> website. Download the latest version for your OS and follow the instructions.</p>
+<p></br></p>
+<p>Each year a new version of R is available, and 2-3 minor releases. You should update your software regularly.</p>
+</section><section id="running-r-code" class="slide level2">
+<h2>Running R code</h2>
+<div class="left", style="width: 65%;"> 
+
+Interpreter mode:
+
+<li> open a terminal and launch R by calling "R" (or open an R console). </li>
+
+<li>  type R commands interactively in the command line, pressing `Enter` to execute.</li>
+
+<li> use `q()` to quit R.</li>
+</br>
+
+Scripting mode:
+
+<li> write a text file containing all commands you want to run </li>
+
+<li>save your script as an R script file (e.g. "myscript.R") </li>
+
+<li> execute your code from the terminal by calling "Rscript myscript.R"</li>
+
+</div>
+<div class="right", style="width: 35%;"> 
+<img src="Lecture1-figure/RGUI.png" height="350" width="400"></img> 
+<img src="Lecture1-figure/terminal.png" height="350"  width="400"></img> 
+</div>
+</section><section id="r-editors" class="slide level2">
+<h2>R editors</h2>
+<p>The most popular <strong>R editors</strong> are:</p>
+<ul>
+<li><a href="https://www.rstudio.com/products/RStudio/"><strong>Rstudio</strong></a>, an integrated development environment (IDE) for R.</li>
+<li><a href="https://www.gnu.org/software/emacs/"><strong>Emacs</strong></a>, a free, powerful, customizable editor for many languages.</li>
+</ul>
+<p></br> We recommend to use <strong>RStudio</strong>, as it is more user-friendly.</p>
+</section><section id="installing-rstudio" class="slide level2">
+<h2>Installing RStudio</h2>
+<p>RStudio is open-source and cross-platform (Linux, Mac, Windows).<br />
+Download and install the latest version for your OS from <a href="https://www.rstudio.com/products/rstudio/download/#download">the official website</a>.</p>
+<p><img src="Lecture1-figure/RStudio_window.png"  width="800"></img></p>
+</section><section id="rstudio-window" class="slide level2">
+<h2>RStudio window</h2>
+<p><img src="Lecture1-figure/rstudio-editor.png"  width="800"></img></p>
+</section><section id="rstudio-preferences" class="slide level2">
+<h2>RStudio preferences</h2>
+<p><img src="Lecture1-figure/RStudio_preferences.png" width="800"></img></p>
+</section><section id="rstudio-layout" class="slide level2">
+<h2>RStudio layout</h2>
+<p><img src="Lecture1-figure/RStudio_layout.png" width="800"></img></p>
+</section><section id="rstudio-apprearance" class="slide level2">
+<h2>RStudio apprearance</h2>
+<p><img src="Lecture1-figure/RStudio_appearances.png" width="1000"></img></p>
+<p>More on RStudio cuztomization can be found <a href="https://support.rstudio.com/hc/en-us/articles/200549016-Customizing-RStudio">here</a></p>
+</section><section id="r-document-types" class="slide level2">
+<h2>R document types</h2>
+<p><img src="Lecture1-figure/RStudio_documents.png" width="1000"></img></p>
+</section><section id="r-document-types-1" class="slide level2">
+<h2>R document types</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/doc/contrib/Lemon-kickstart/kr_scrpt.html">R Script</a> <strong>a text file</strong> containing R commands stored together.</p></li>
+<li><p><a href="http://rmarkdown.rstudio.com/lesson-1.html">R Markdown</a> files can generate high quality reports contatining notes, code and code outputs. <strong>Python and bash code </strong> can also be executed.</p></li>
+<li><p><a href="http://rmarkdown.rstudio.com/r_notebooks.html">R Notebook</a> is an R Markdown document with <strong>chunks that can be executed independently and interactively</strong>, with output visible immediately beneath the input.</p></li>
+<li><p><a href="https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations">R presentation</a> let’s you author <strong>slides</strong> that make use of R code and LaTeX equations as <strong>straightforward</strong> as possible.</p></li>
+<li><p><a href="https://support.rstudio.com/hc/en-us/articles/200552056-Using-Sweave-and-knitr">R Sweave</a> enables the embedding of <strong>R code within LaTeX documents</strong>.</p></li>
+<li><p><a href="http://rmarkdown.rstudio.com/formats.html">Other</a> documents</p></li>
+</ul>
+</section><section id="r-packages" class="slide level2">
+<h2>R packages</h2>
+<ul>
+<li><p>R packages are <strong>a collection of R functions, complied code and sample data.</strong></p></li>
+<li><p>They are stored under a directory called <strong>library</strong> in the R environment.</p></li>
+<li><p>Some packages are <strong>installed by default</strong> during R installation and are always automatically loaded at the beginning of an R session.</p></li>
+</ul>
+<ul>
+<li class="fragment">Additional packages by the user from:
+<ul>
+<li class="fragment"><a href="https://cran.r-project.org/web/packages/available_packages_by_name.html">CRAN</a> The first and biggest R repository.</li>
+<li class="fragment"><a href="http://bioconductor.org/">Bioconductor</a>: Bioinformatics packages for the analysis of biological data.</li>
+<li class="fragment"><a href="https://github.com/">github</a>: packages under development</li>
+</ul></li>
+</ul>
+</section><section id="installing-r-packages-from-different-repositories" class="slide level2">
+<h2>Installing R packages from different repositories:</h2>
+<ul>
+<li>From CRAN:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># install.packages(&quot;Package Name&quot;), e.g. </span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">install.packages</span>(<span class="st">&quot;glmnet&quot;</span>) </span></code></pre></div>
+<ul>
+<li>From Bioconductor:</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># First, load Bioconductor script. You need to have an R version &gt;=3.3.0. </span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">source</span>(<span class="st">&quot;https://bioconductor.org/biocLite.R&quot;</span>) </span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co"># Then you can install packages with:  biocLite(&quot;Package Name&quot;), e.g. </span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="kw">biocLite</span>(<span class="st">&quot;limma&quot;</span>) </span></code></pre></div>
+<ul>
+<li>From github:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># You need to first install a package &quot;devtools&quot; from CRAN </span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">install.packages</span>(<span class="st">&quot;devtools&quot;</span>) </span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="co"># Load the &quot;devtools&quot; package </span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="kw">library</span>(devtools) </span>
+<span id="cb3-6"><a href="#cb3-6"></a></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="co"># Then you can install a package from some user&#39;s reporsitory, e.g. </span></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="kw">install_github</span>(<span class="st">&quot;twitter/AnomalyDetection&quot;</span>) </span>
+<span id="cb3-9"><a href="#cb3-9"></a></span>
+<span id="cb3-10"><a href="#cb3-10"></a><span class="co"># or using install_git(&quot;url&quot;), e.g. </span></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="kw">install_git</span>(<span class="st">&quot;https://github.com/twitter/AnomalyDetection&quot;</span>) </span></code></pre></div>
+</section><section id="where-are-r-packages-stored" class="slide level2">
+<h2>Where are R packages stored?</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Get library locations containing R packages </span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">.libPaths</span>()</span></code></pre></div>
+<pre><code>## [1] &quot;/Library/Frameworks/R.framework/Versions/4.0/Resources/library&quot;</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Get the info on all the packages installed </span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="kw">installed.packages</span>()[<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>]</span></code></pre></div>
+<pre><code>##                 Package           LibPath                                                          Version  
+## abind           &quot;abind&quot;           &quot;/Library/Frameworks/R.framework/Versions/4.0/Resources/library&quot; &quot;1.4-5&quot;  
+## actuar          &quot;actuar&quot;          &quot;/Library/Frameworks/R.framework/Versions/4.0/Resources/library&quot; &quot;3.1-1&quot;  
+## additivityTests &quot;additivityTests&quot; &quot;/Library/Frameworks/R.framework/Versions/4.0/Resources/library&quot; &quot;1.1-4&quot;  
+## akima           &quot;akima&quot;           &quot;/Library/Frameworks/R.framework/Versions/4.0/Resources/library&quot; &quot;0.6-2.1&quot;
+## ape             &quot;ape&quot;             &quot;/Library/Frameworks/R.framework/Versions/4.0/Resources/library&quot; &quot;5.4-1&quot;</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Get all packages currently loaded in the R environment </span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="kw">search</span>() </span></code></pre></div>
+<pre><code>## [1] &quot;.GlobalEnv&quot;        &quot;package:stats&quot;     &quot;package:graphics&quot;  &quot;package:grDevices&quot; &quot;package:utils&quot;     &quot;package:datasets&quot;  &quot;package:methods&quot;   &quot;Autoloads&quot;         &quot;package:base&quot;</code></pre>
+</section><section id="getting-you-ready-for-lab-2" class="slide level2">
+<h2>Getting you ready for Lab 2</h2>
+<p>The swirl R package allows to learn R programming and data science very easily. You will use it in Lab 2, so here we are going to install it together. The workflow is the same as for any other R package.</p>
+<p><strong>Step 1</strong>: Open RStudio and type the following into the console:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;swirl&quot;</span>)</span></code></pre></div>
+<p>That is just for this time!!! Once swirl is installed on your machine, you can skip directly to step 2.</p>
+<p><strong>Step 2</strong>: Start swirl</p>
+<p>This is the only step that you will repeat every time you want to run swirl. First, you will load the package using the library() function. Then you will call the function that starts the magic! Type the following, pressing Enter after each line:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">library</span>(<span class="st">&quot;swirl&quot;</span>)</span>
+<span id="cb11-2"><a href="#cb11-2"></a></span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="kw">swirl</span>()</span></code></pre></div>
+</section></section>
+    </div>
+  </div>
+
+  <script src="libs/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
