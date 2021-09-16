@@ -34,3 +34,4 @@ Here are a couple of cheatsheets with data import, transformation, visualization
 + [Data Visualization (ggplot2)](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)
 + [Rmarkdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
 
+[Back]({{ "" }}{% link _pages/stat.md %}) 
