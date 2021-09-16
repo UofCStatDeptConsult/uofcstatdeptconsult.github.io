@@ -91,13 +91,15 @@ b {
 /* Code */
 
 code {
-  color: #993030;
+  color: #222;
   white-space: pre-wrap;
-  background-color: #222;
+  background-color: #aaa;
 }
 
 pre {
-  background-color: #222;
+  color: #222;
+  white-space: pre-wrap;
+  background-color: #e1e1e1;
 }
 
 pre {
@@ -115,7 +117,7 @@ hr {
 }
 
 blockquote {
-  color: #666;
+  color: #222;
   border-left: .25rem solid #333;
 }
 
@@ -127,7 +129,7 @@ th {
 
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #222;
+  background-color: #aaa;
 }
 
 /* Pagination items can be `span`s or `a`s */
@@ -168,7 +170,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .gist .markdown-body pre {
-  background-color: #111 !important;
+  background-color: #aaa !important;
 }
 
 .gist-file {
