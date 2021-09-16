@@ -14,7 +14,21 @@ main regression-related ideas that are useful to know during consulting.
 
 This section is focused more on the big-picture of linear regression and when
 we might want to use it in consulting. We defer a discussion of inference in
-linear models to the next section.
+linear models to the [next section]().
+
+There are three steps in the analysis of data using a (Generalized) Linear Model:
+<p style="color:grey;font-size:11px;"  style="float: left; margin-right: 3em;" align="center">
+<img src="{{ site.baseurl }}images/steps.png" alt="drawing1" width="500"/>
+<i>Figure: the three steps in GLM analysis.</i>
+</p> 
++ __Step 1: Model Selection__, which involves determining which GLM to choose.
++ __Step 2: Model Fitting__, which is the actual process of fitting the model to your data.
++ __Step 3: Diagnostics__, which involves making sure that your model is a good fit and produces quality estimates
+
+
+<br>
+<br>
+
 
 Depending on the type of data that you have at-hand, you might opt for:
 + <a href="#linear-1">Linear Regression</a>, if your output $$y$$ is a continuous variable.
