@@ -5,9 +5,20 @@ title: "Getting in touch and scheduling a consult"
 
 ## Scheduling a Consult
 
-To schedule a consult with our team of consultants, please fill in [the following link](https://docs.google.com/forms/d/e/1FAIpQLSf2HI1I-WUXgz71M67tPZ0AH3ClS0UjOCmnly_RcrjhX_vU0A/viewform?usp=sf_link).
 
-After your form is submitted, our consultants will be in touch via email to schedule your remote consulting appointment, to be conducted via a teleconferencing app such as Zoom. We aim to give an initial response within 24 hours, and to schedule an initial meeting within the same week your request is received.
+To schedule a consult with our team of consultants, please choose an appointment time from the widget below (or using [the following link](https://appt.link/stats-consultings-meetings-bg7fl48m/60-minute-meeting)) and fill in the form. Make sure to use your UChicago email address to schedule the meeting. 
+
+
+After your form is submitted, our consultants will be in touch via email with the details for your remote consulting appointment, to be conducted via a teleconferencing app such as Zoom. We aim to give an initial response within 24 hours, and to schedule an initial meeting within the same week your request is received.
+
+<script async defer src="https://js.appointlet.com/"></script>
+<link href="https://js.appointlet.com/styles.css" rel="stylesheet">
+<div class="appointlet-inline" data-appointlet-inline="https://appt.link/stats-consultings-meetings-bg7fl48m/60-minute-meeting"></div>
+
+
+
+
+
 
 
 ## Getting further help from our group
