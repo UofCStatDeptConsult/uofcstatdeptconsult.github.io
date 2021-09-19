@@ -4,58 +4,67 @@ title: Data Manipulation
 permalink: /stat/data/
 ---
 
+
+<h2 id="top"> </h2>
+
+
+Data manipulation, pre-processing and cleaning might not be the most glamourous component of data analysis, but is nonetheless essential to any statistical (or machine learning!) analysis.  Being able to efficiently and neatly process data is thus an important topic, for which we try here to provide a few basic elements --- focusing on its implementation with __R__.
+
 <div class="center" style="width: 100%">
 <img src="{{ site.baseurl }}lectures/Lecture5-figure/data-science-explore.png" width="400" style="center"/> 
 </div>
 
-## The `purr` package
 
-Package `purrr` is part of the `tidyverse`. Handles tasks similar to
-ones performed by apply-family functions in base R.
+We will focus here on:
++ <a href="#purr">The "purrr" package</a> , for efficient data manipulations (loops over the data, etc),
++ <a href="#missing">Handling missing values</a>
++ <a href="#merging">  Merging datasets</a>
++ <a href="#export">  Exporting data</a>
 
-It enhances R’s functional programming toolkit by providing a
+
+<h2 id="purr">  1. The "purrr" package </h2>
+
+The package `purrr` is part of the `tidyverse` suit (and is consequently automatically downloaded by calling the `tidyverse`). `purrr` handles tasks similar to
+ones performed by apply-family functions in base R through a family of "map" functions (see details below).
+
+It enhances __R__’s functional programming toolkit by providing a
 complete and consistent set of tools for working with functions and
 vectors.
+
+### 1.1 The map functions
+
 `map`-functions allow you to replace many for loops with code that is easier 
-to read.
+to read.  `purrr` functions are implemented in C, which can also make it more efficient that manual loops over the data.\\
+For instance:
 
 - `map()`, `map_if()`, `map_at()` returns a list
 - `map_lgl()` returns a logical vector, 
 - `map_int()` returns a integer vector,
 - `map_dbl()` returns a double vector, 
 - `map_chr()` returns a character vector, 
-- `map_dfr()`, `map_dfc()` returns a `data.frame`\
+- `map_dfr()`, `map_dfc()` returns a `data.frame`
 by binding rows or columns respectively.
 
-## The map functions
 
-Example: column-wise mean
+
+*Example: column-wise mean*
 ```{r}
 df <- tibble(a=rnorm(10), b=rnorm(10), c=rnorm(10), d=rnorm(10))
 map_dbl(df, mean)                       # or equivalently: df %>% map_dbl(mean)   
 ```
 
-Focus is on the operation being performed, not the book-keeping:
-
-- `purrr` functions are implemented in C.
-- the second argument, `.f`, can be a functions, a formula, 
+The focus here is on the operation being performed, not the book-keeping. The second argument, `.f`, can be a functions, a formula, 
 a character vector, or an integer vector.
 
 ```{r}
 map(1:3, ~ rnorm(7, .x))
 ```
 
-## The map functions (2)
-
-- `map` can pass additional parameters to the function
+ `map` can pass additional parameters to the function:
 
 ```{r}
 map_dbl(df, mean, trim = 0.25)
 ```
-
-- other inputs/outputs:
-
-
 
 ```{r}
 mtcars %>% 
@@ -73,27 +82,31 @@ mtcars %>%
 
 
 
-## Base-R maps vs. purrr maps
+### 1.2. Base-R maps vs. purrr maps
 
-However, `purrr` is more consistent, so you should learn it.
+`purrr`  does some of the same than the `apply` family. However, `purrr` is more consistent, so you should learn it.
 
 A quick reference of similar base R functions:
 
-- lapply is basically identical to map
+- lapply is basically identical to map.
 
 - sapply is a wrapper around lapply and it tries to simplify the output. Downside: you
-never know what you’ll get
+never know what you’ll get.
 
-- vapply: like sapply, but you can supply an additional argument that defines the type
+- vapply: like sapply, but you can supply an additional argument that defines the type.
 
 
-You can learn more about purr here: (http://r4ds.had.co.nz/iteration.html)
+You can learn more about ```purrr``` here: (http://r4ds.had.co.nz/iteration.html).
 
-# Handling missing values
+<a href="#top" class="back-to-top">
+  Back to Top &uarr;
+</a>
 
-## Missing values
+<h2 id="missing">  2. Handling missing values </h2> 
 
-Two types of missingness
+### 2.1. Types of Missingness
+
+There are two main types of missingness: __explicit__ and __implicit__, as showcased in the following example.
 ```{r}
 stocks <- tibble(
   year   = c(2015, 2015, 2015, 2015, 2016, 2016, 2016),
@@ -102,9 +115,8 @@ stocks <- tibble(
 )
 ```
 
-The return for the fourth quarter of 2015 is **explicitly missing**
-
-The return for the first quarter of 2016 is **implicitly missing**
++ The return for the fourth quarter of 2015 is **explicitly missing**.
++ The return for the first quarter of 2016 is **implicitly missing**.
 
 The way that a dataset is represented can make implicit values explicit.
 
@@ -112,7 +124,7 @@ The way that a dataset is represented can make implicit values explicit.
 stocks %>% spread(year, return)
 ```
 
-## Gathering missing data
+### 2.2 Gathering missing data
 
 Recall the functions we learned from `tidyr` package.
 
@@ -125,7 +137,7 @@ stocks %>% spread(year, return) %>%
 ```
 
 
-## Completing missing data
+### 2.3 Completing missing data
 
 `complete()` takes a set of columns, and finds all unique combinations. 
 It then ensures the original dataset contains all those values, **filling 
@@ -135,7 +147,7 @@ in explicit `NA`s** where necessary.
 stocks %>% complete(year, qtr)
 ```
 
-## Different intepretations of `NA`
+### 2.4 Different intepretations of `NA`
 
 Sometimes when a data source has primarily been used for data entry, missing
 values indicate that the previous value should be carried forward:
@@ -159,9 +171,14 @@ treatment %>% fill(person)
 ```
 
 
-# Merging datasets
+<a href="#top" class="back-to-top">
+  Back to Top &uarr;
+</a>
 
-## Relational data
+
+<h2 id="merging">  3. Merging datasets</h2>
+
+###  3.1 Relational data
 
 - Rarely does a data analysis involve only a single table of data.
 
@@ -173,9 +190,7 @@ the relations, not just the individual datasets, that are important.
 - All other relations are built up from this simple idea: the relations of three 
 or more tables are always a property of the relations between each pair. 
 
-## Example
-
-the `nycflights13` package contains a collection of related datasets.
+*Example: The `nycflights13` package contains a collection of related datasets.*
 
 ```{r}
 library(nycflights13)
@@ -186,7 +201,7 @@ library(nycflights13)
 
 Source: (http://r4ds.had.co.nz/relational-data.html)
 
-## Keys
+###  3.2.  Keys
 
 **A key** is a variable (or set of variables) that uniquely identifies 
 an observation.
@@ -209,7 +224,7 @@ a record in `flights` dataset.
 A variable can be both a primary key and a foreign key. 
 
 
-## Identify primary keys
+####  Identify primary keys
 
 It’s good practice to verify that chosen keys do indeed uniquely 
 identify each observation. 
@@ -230,7 +245,7 @@ weather %>%
   filter(n > 1)
 ```
 
-## No primary key
+#### No primary key
 
 Sometimes a table doesn’t have an explicit primary key, e.g. 
 in `flights` dataset each row is an observation, but no combination of 
@@ -255,7 +270,7 @@ flights %>%
 
 
 
-## Merging two tables
+###  3.3. Merging two tables
 
 There are three families of functions designed to merge relational data:
 
@@ -267,7 +282,7 @@ whether or not they match an observation in the other table.
 
 - **Set operations**, which treat observations as if they were set elements.
 
-## Mutating joins
+#### 3.3.a.  Mutating joins
 
 **A mutating join** allows you to combine variables from two tables,
 by matching observations by their keys, and then copying across variables 
@@ -279,7 +294,6 @@ flights %>%
   left_join(airlines, by = "carrier")
 ```
 
-## Mutating joins
 
 There are four mutating join functions: 
 
@@ -291,7 +305,7 @@ There are four mutating join functions:
     + `full_join()`
 
 
-## A simple example
+*A simple example:*
 
 
 
@@ -321,8 +335,8 @@ y <- tribble(
 ```
 
 ![]({{ site.baseurl }}lectures/Lecture5-figure/join-setup2.png)
-## Inner join
 
+##### Inner join
 
 ```{r}
 x %>% inner_join(y, by = "key")
@@ -332,7 +346,7 @@ x %>% inner_join(y, by = "key")
 Source: (http://r4ds.had.co.nz/relational-data.html)
 
 
-## Outer join
+#####   Outer join
 
 <img src="{{ site.baseurl }}lectures/Lecture5-figure/join-outer.png" height="750" style="float: right; margin-left: 1em;"/>
 
@@ -354,21 +368,25 @@ An outer join keeps observations that appear in at least one of the tables:
 
 <small2>Source: http://r4ds.had.co.nz/relational-data.html</small2>
 
-## Duplicate keys
+#####  Duplicate keys
 
 What happens when there are duplicate keys?
 
 - One table has duplicate keys. There may be a one-to-many relation.
-<img src="{{ site.baseurl }}lectures/Lecture5-figure/join-one-to-many.png" height="200"></img> 
+<div class="left" style="width: 50%">
+<img src="{{ site.baseurl }}lectures/Lecture5-figure/join-one-to-many.png" height="200" />
+</div>
 
 - Both tables have duplicate keys. When you join duplicated keys, you get all 
 possible combinations:
-<img src="{{ site.baseurl }}lectures/Lecture5-figure/join-many-to-many.png" height="250"></img> 
+<div class="left" style="width: 50%">
+<img src="{{ site.baseurl }}lectures/Lecture5-figure/join-many-to-many.png" height="250" />
+</div>
 
-<small2>Source: http://r4ds.had.co.nz/relational-data.html</small2>
+*Source: http://r4ds.had.co.nz/relational-data.html*
 
 
-## Filtering joins
+### 3.3.b. Filtering joins
 
 Filtering joins match observations in the same way as mutating joins, 
 but affect the observations, not the variables. 
@@ -388,7 +406,7 @@ There are two types:
 </div>
 
 
-## Multiple matches
+#### Multiple matches
 
 In filtering joins, only the existence of a match is important.
 
@@ -398,7 +416,7 @@ Filtering joins never duplicate rows like mutating joins do:
 
 ![]({{ site.baseurl }}lectures/Lecture5-figure/join-semi-many.png)
 
-## Set operations
+###  3.3.c. Set operations
 
 Set operations apply to rows; they expect the `x` and `y` inputs to have 
 the same variables, and treat the observations like sets.
@@ -410,10 +428,8 @@ the same variables, and treat the observations like sets.
 - `setdiff(x, y)`: returns observations in x, but not in y.
 
 All these operations work with a complete row, comparing the values of every
-variable. 
-
-
-## Example
+variable. \\
+*Examples:*
 
 
 
@@ -440,11 +456,13 @@ setdiff(df1, df2)
 setdiff(df2, df1)
 ```
 
+<a href="#top" class="back-to-top">
+  Back to Top &uarr;
+</a>
 
+<h2 id="export">  4. Data Export </h2> 
 
-# Data Export
-
-## Exporting Data
+### 4.1 Exporting Data
 
 After working with a dataset and doing all data manipulation, you might
 want to save your new data table.
@@ -480,7 +498,7 @@ read_sas("mtcars.sas7bdat")
 write_sas(mtcars, "mtcars.sas7bdat")
 ```
 
-## Saving the workspace
+### 4.2. Saving the workspace
 
 - You can also choose to **save all objects** currently in the workspace
 (variables, functions, etc.) into a file e.g. `filename.rda`.
@@ -510,6 +528,10 @@ load("path/to/filename.rda")
 # read just the previously saved 1 object
 object <- readRDS("path/to/filename.rds")
 ```
+
+<a href="#top" class="back-to-top">
+  Back to Top &uarr;
+</a>
 
 
 *Based on the R-bootcamp class by Lan Huong Nguyen (Stanford), edited by Claire Donnat.*
