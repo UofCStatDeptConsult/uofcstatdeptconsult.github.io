@@ -10,6 +10,96 @@ I'd bet it's the t-test. There are actually several variations, which are used t
 interrogate different null hypothesis, but the statistic that is used to test the
 null is similar across scenarios.
 
+Because it is so common, this test is customisable:
++ "one sided vs two sided": this requires to answer the question: am I interested in a specific side of the difference (ie, I want to test $$H_0: \Delta \leq 0$$ vs  $$H_a: \Delta > 0$$) or just the existence of a difference ( $$H_0: \Delta \-0$$  vs  $$H_a: \Delta \neq 0$$) ?
++ "one sample vs two-sample":  
++ "single vs paired": this requires answering the question: are my samples paired (ie, am I observing samples from the same subjects "before" and "after" treatment)
+
+We provide a little bit more information on these tests in the subsequent subsections.
+
+## One sided/ two sided
+
+
+*An example: Two-sided test of the mean*  
+<img src="{{ site.baseurl }}images/both-sided.png"  width="400" alt="pval" style="float: right; margin-right: 5em;"/>
+
+Is the mean flight arrival delay statistically equal to 0?
+
+
+**Two-sided test of the mean: Test the null hypothesis:**
+
+$$H_0: \mu = \mu_0 = 0$$ \\
+$$H_a: \mu \ne \mu_0 = 0$$ \\
+where $$\mu$$ is where $$\mu$$ is the average arrival delay.
+
+```{r}
+library(tidyverse)
+library(nycflights13)
+mean(flights$arr_delay, na.rm = T)
+```
+<img src="{{ site.baseurl }}images/lec7-1.png"  width="800" alt="pval"/>
+
+
+
+Is this statistically significant?
+
+```{r}
+( tt = t.test(x=flights$arr_delay, mu=0, alternative="two.sided" ) )
+```
+<img src="{{ site.baseurl }}images/lec7-2.png"  width="800" alt="pval"/>
+
+
+The function t.test returns an object containing the following components:
+
+```{r}
+names(tt)
+```
+<img src="{{ site.baseurl }}images/lec7-3.png"  width="800" alt="pval"/>
+
+
+```{r}
+# The p-value:
+tt$p.value
+```
+<img src="{{ site.baseurl }}images/lec7-4.png"  width="800" alt="pval" />
+
+
+```{r}
+# The 95% confidence interval for the mean:
+tt$conf.int
+```
+<img src="{{ site.baseurl }}images/lec7-5.png"  width="800" alt="pval" />
+
+
+
+
+
+*An example: One-sided test of the mean*  
+<img src="{{ site.baseurl }}images/left-sided.png"  width="400" alt="pval" style="float: right; margin-right: 5em;"/>
+
+**Test the null hypothesis:**
+
+$$H_0: \mu = \mu_0 =0$$ \\
+$$H_a: \mu < \mu_0 = 0$$
+
+In __R__: Is the average delay 5 or is it lower?
+
+
+```{r}
+( tt = t.test(x=flights$arr_delay, mu=5, alternative="less" ) )
+```
+<img src="{{ site.baseurl }}images/lec7-6.png"  width="800" alt="pval"/>
+
+
+Failure to reject is not acceptance of the null hypothesis.
+
+
+<br/>
+<br/>
+
+
+## Single vs Paired t-test
+
 + __The one-sample t-test is used to measure whether the mean of a sample
 is far from a preconceived population mean.__
 + The two-sample t-test is used to measure whether the difference in sample
