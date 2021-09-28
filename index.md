@@ -27,6 +27,29 @@ Consulting sessions can be booked  starting the first week of the Fall quarter.
 
 __Consultants of the quarter__
 
+Please join us in congratulating the team of Wei Kuang, Deqing Fu and Yanbing Yi, for their expectional service as consultants over the summer! They have created an [R tutorial](https://uofcstatdeptconsult.github.io/images/tutorial-summary.html), which provides a good introduction and starting point to anyone looking to learn about R! 
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="{{ site.baseurl }}/images/weikuang.png" alt="Wei Kuang, 3rd Year PhD" height="250"/>
+  <figcaption>Wei Kuang, 3rd Year PhD</figcaption>
+  </div>
+  <div class="img-container">
+  <img src="{{ site.baseurl }}/images/deqingfu.png" alt="Deqing Fu, Advanced Master Student" height="250"/>
+  <figcaption>Deqing Fu, Advanced Master Student</figcaption>
+  </div>
+  <div class="img-container">
+  <img src="{{ site.baseurl }}/images/yanbingyi.png" alt="Yanbing Yi, Advanced Master Student" height="250"/>
+  <figcaption>Yanbing Yi,, Advanced Master Student</figcaption>
+  </div>
+</div>
+
+
+
+
+Good job, team!
+
+
 ### Related links
 * [About the consulting program](https://uofcstatdeptconsult.github.io/about/)
 * [Scheduling a consult](https://uofcstatdeptconsult.github.io/schedule/)
