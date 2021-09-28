@@ -3,6 +3,40 @@ layout: page
 title: Home Page
 ---
 
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 23.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+figure {
+    display: inline-block;
+    border: 1px dotted gray;
+    margin: 40px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+}
+
+</style>
+</head>
+
 Welcome to the homepage for the __Statistical Consulting Program at the University of Chicago__! \\
 Here, you will find more information about our program, how to contact us and what to expect from our services and consultants.  You will also find links to helpful resources, the consulting request form, as well as a way to look for and consult RA opportunities. Our consultants can also use this page as a starting page in their discussion with their clients, as well as to find tips on how to lead a consulting session or consult prior cases.\\
 *Note: We are currently under the process of designing and expanding this website. Any feedback on useful resources to include and improvements to be made are welcome!*
@@ -31,16 +65,19 @@ Please join us in congratulating the team of Wei Kuang, Deqing Fu and Yanbing Yi
 
 <div class="clearfix">
   <div class="img-container">
-  <img src="{{ site.baseurl }}/images/weikuang.png" alt="Wei Kuang, 3rd Year PhD" height="250"/>
-  <figcaption>Wei Kuang, 3rd Year PhD</figcaption>
+  <img src="{{ site.baseurl }}images/weikuang.png" alt="Wei Kuang, 3rd Year PhD"    height="300"/>
+  <figcaption  align="center">Wei Kuang</figcaption>
+  <figcaption  align="center"><i>3rd Year PhD</i></figcaption>
   </div>
   <div class="img-container">
-  <img src="{{ site.baseurl }}/images/deqingfu.png" alt="Deqing Fu, Advanced Master Student" height="250"/>
-  <figcaption>Deqing Fu, Advanced Master Student</figcaption>
+  <img src="{{ site.baseurl }}images/deqingfu.png" alt="Deqing Fu, Advanced MS"  height="300" />
+  <figcaption  align="center">    Deqing Fu     </figcaption>
+  <figcaption  align="center"> <i>Advanced MS Student</i></figcaption>
   </div>
   <div class="img-container">
-  <img src="{{ site.baseurl }}/images/yanbingyi.png" alt="Yanbing Yi, Advanced Master Student" height="250"/>
-  <figcaption>Yanbing Yi,, Advanced Master Student</figcaption>
+  <img src="{{ site.baseurl }}images/yanbingyi.png" alt="Yanbing Yi"  height="300"/>
+  <figcaption  align="center">Yanbing Yi</figcaption>
+  <figcaption  align="center"> <i>Advanced MS Student</i></figcaption>
   </div>
 </div>
 
