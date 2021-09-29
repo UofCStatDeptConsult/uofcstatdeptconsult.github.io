@@ -68,7 +68,7 @@ To find the right hypothesis test, we need to select the right "ingredients". Th
 
 
 + __Question 1: What type of data do I have?__
-    + Categorical Data [Contingency Tables]()
+    + Categorical Data [Contingency Tables]({{ "" }}{% link _pages/contingency.md %})
     + Continuous Data: [t-tests]({{ "" }}{% link _pages/hypothesis2.md %}), [Anova]({{ "" }}{% link _pages/anova.md %})
 
 
