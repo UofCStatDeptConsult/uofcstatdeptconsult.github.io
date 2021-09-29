@@ -13,7 +13,7 @@ After your form is submitted, our consultants will be in touch via email with th
 
 <script async defer src="https://js.appointlet.com/"></script>
 <link href="https://js.appointlet.com/styles.css" rel="stylesheet">
-<div class="appointlet-inline" data-appointlet-inline="https://appt.link/stats-consultings-meetings-bg7fl48m/60-minute-meeting"></div>
+<div class="appointlet-inline" data-appointlet-inline="https://appt.link/stats-consultings-meetings-bg7fl48m"></div>
 
 
 
