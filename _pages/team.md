@@ -13,7 +13,13 @@ title: "Our Team"
 .img-container {
   float: left;
   width: 33.33%;
-  padding: 5px;
+  padding: 2px;
+}
+
+.img-container2 {
+  float: left;
+  width: 10.%;
+  padding: 2px;
 }
 
 .clearfix::after {
@@ -46,8 +52,144 @@ The Statistics workshop is currently led by Prof. Mei Wang and Claire Donnat.
 
 
 
-This quarter, we're happy to have among our consultants: <br />
-[TO BE ANNOUNCED]
+### This quarter, we're happy to have among our consultants: <br />
+
+
+### Monday Team
+
+<div class="clearfix">
+<div class="img-container2">
+<img src="{{ site.baseurl }}/images/rohan.png" alt="" height="150"/>
+<figcaption>Rohan Hore (PhD)</figcaption>
+</div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Michelle Li (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/matt.png" alt="" height="150"/>
+  <figcaption>Matt Ludwig (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/madhuri.png" alt="" height="150"/>
+  <figcaption>Madhuri Raman (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/zihaowang.png" alt="" height="150"/>
+  <figcaption>Zihao Wang (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Johnson Zhang (MS)</figcaption>
+  </div>
+</div>
+
+
+
+### Tuesday Team
+
+<div class="clearfix">
+<div class="img-container2">
+<img src="{{ site.baseurl }}/images/bill.png" alt="" height="150"/>
+<figcaption>Bill Katsianos (PhD)</figcaption>
+</div>
+<div class="img-container2">
+<img src="{{ site.baseurl }}/images/yangliu.png" alt="" height="150"/>
+<figcaption>Yang Liu (MS)</figcaption>
+</div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Jimmy Melican (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/zixuanwu.png" alt="" height="150"/>
+  <figcaption>Zixuan Wu (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Jinwen Yang (PhD)</figcaption>
+  </div>
+</div>
+
+
+
+
+### Wednesday Team
+
+<div class="clearfix">
+<div class="img-container2">
+<img src="{{ site.baseurl }}/images/xingyuefang.png" alt="" height="150"/>
+<figcaption>Xingyue Fang (MS)</figcaption>
+</div>
+<div class="img-container2">
+<img src="{{ site.baseurl }}/images/joonsuk.png" alt="" height="150"/>
+<figcaption>Joonsuk Kang (PhD)</figcaption>
+</div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/nick.png" alt="" height="150"/>
+  <figcaption>Nicholas Park (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/fengweizhang.png" alt="" height="150"/>
+  <figcaption>Fengwei Zhang (MS)</figcaption>
+  </div>
+</div>
+
+### Thursday Team
+
+<div class="clearfix">
+<div class="img-container2">
+<img src="{{ site.baseurl }}/images/melissa.png" alt="" height="150"/>
+<figcaption>Melissa Adrian (PhD)</figcaption>
+</div>
+<div class="img-container2">
+<img src="{{ site.baseurl }}/images/awchen.png" alt="" height="150"/>
+<figcaption>Alexander Chen (MS)</figcaption>
+</div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/subhod.png" alt="" height="150"/>
+  <figcaption>Subhod Khoketal(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/kentaro.png" alt="" height="150"/>
+  <figcaption>Kentaro Nakamura (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/huanqingwang.png" alt="" height="150"/>
+  <figcaption>Huanqing Wang (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/yuepengyang.png" alt="" height="150"/>
+  <figcaption>Yuepeng Yang (PhD)</figcaption>
+  </div>
+</div>
+
+
+### Friday Team
+
+<div class="clearfix">
+<div class="img-container2">
+<img src="{{ site.baseurl }}/images/angzhi.png" alt="" height="150"/>
+<figcaption>Andrew Fan(PhD)</figcaption>
+</div>
+<div class="img-container2">
+<img src="{{ site.baseurl }}/images/soham.png" alt="" height="150"/>
+<figcaption>Soham Bonnerjee (PhD)</figcaption>
+</div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/aabesh.png" alt="" height="150"/>
+  <figcaption>Aabesh Bhattacharyya (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/becky.png" alt="" height="150"/>
+  <figcaption>Rebecca Scurlock (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/ruitingtong.png" alt="" height="150"/>
+  <figcaption>Ruiting Tong (MS)</figcaption>
+  </div>
+</div>
+
 
 ### We are running a quarterly Consulting Cup, and reward the consultants according to their performance. So please take a minute to give points to our consultants on our [satisfaction survey]() --- they are counting on your participation to win!
 
