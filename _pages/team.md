@@ -142,10 +142,7 @@ The Statistics workshop is currently led by Prof. Mei Wang and Claire Donnat.
 <img src="{{ site.baseurl }}/images/melissa.png" alt="" height="150"/>
 <figcaption>Melissa Adrian (PhD)</figcaption>
 </div>
-<div class="img-container2">
-<img src="{{ site.baseurl }}/images/awchen.png" alt="" height="150"/>
-<figcaption>Alexander Chen (MS)</figcaption>
-</div>
+
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/subhod.png" alt="" height="150"/>
   <figcaption>Subhod Khoketal(PhD)</figcaption>
