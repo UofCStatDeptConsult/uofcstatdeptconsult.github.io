@@ -32,24 +32,19 @@ title: "Our Team"
 
 
 
-The Statistics workshop is currently led by Prof. Mei Wang and Claire Donnat.
+The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 
 
 <div class="clearfix">
   <div class="img-container">
-  <img src="{{ site.baseurl }}/images/Mei.jpeg" alt="Prof. Mei Wang" height="250"/>
-  <figcaption>Professor Mei Wang</figcaption>
-  </div>
-  <div class="img-container">
   <img src="{{ site.baseurl }}/images/donnat.jpg" alt="Prof. Claire Donnat" height="250"/>
   <figcaption>Professor Claire Donnat</figcaption>
   </div>
+  <div class="img-container">
+  <img src="{{ site.baseurl }}/images/Mei.jpeg" alt="Prof. Mei Wang" height="250"/>
+  <figcaption>Professor Mei Wang</figcaption>
+  </div>
 </div>
-
-
-
-
-
 
 
 ### This quarter, we're happy to have among our consultants: <br />
@@ -66,10 +61,7 @@ The Statistics workshop is currently led by Prof. Mei Wang and Claire Donnat.
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Michelle Li (MS)</figcaption>
   </div>
-  <div class="img-container2">
-  <img src="{{ site.baseurl }}/images/matt.png" alt="" height="150"/>
-  <figcaption>Matt Ludwig (MS)</figcaption>
-  </div>
+
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/madhuri.png" alt="" height="150"/>
   <figcaption>Madhuri Raman (MS)</figcaption>
@@ -126,6 +118,10 @@ The Statistics workshop is currently led by Prof. Mei Wang and Claire Donnat.
 <figcaption>Joonsuk Kang (PhD)</figcaption>
 </div>
   <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/matt.png" alt="" height="150"/>
+  <figcaption>Matt Ludwig (MS)</figcaption>
+  </div>
+  <div class="img-container2">
   <img src="{{ site.baseurl }}/images/nick.png" alt="" height="150"/>
   <figcaption>Nicholas Park (MS)</figcaption>
   </div>
@@ -142,10 +138,7 @@ The Statistics workshop is currently led by Prof. Mei Wang and Claire Donnat.
 <img src="{{ site.baseurl }}/images/melissa.png" alt="" height="150"/>
 <figcaption>Melissa Adrian (PhD)</figcaption>
 </div>
-<div class="img-container2">
-<img src="{{ site.baseurl }}/images/awchen.png" alt="" height="150"/>
-<figcaption>Alexander Chen (MS)</figcaption>
-</div>
+
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/subhod.png" alt="" height="150"/>
   <figcaption>Subhodh Koketal(PhD)</figcaption>
