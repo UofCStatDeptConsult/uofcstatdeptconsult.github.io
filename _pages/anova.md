@@ -16,7 +16,7 @@ $$ y_i = {x}_{1i} \beta_1   +  \mathbb{x}_{2i} \beta_2 + \cdots  +\mathbb{x}_{pi
 
 where $$x_{ij}$$ are known observed variables, the $$\beta_j$$ are some "idealized formulation of some aspects of interest to the investigator in the phenomena underlying the observations". The usual minimal assumptions made in this model are (a) that the noise is centered ($$\mathbb{E}[\epsilon_i]=0$$) and (b) that the observations are uncorrelated:  ($$\mathbb{E}[\epsilon_i\epsilon_j]=0$$).
 
-Note the ressemblance with linear regression: 
+Note the resemblance with linear regression: 
 + if $$\{x_{ij}\}$$ are continuous-valued, this is indeed regression analysis. 
 + But __if the $$\{x_{ij}\}$$ are indicator variables (ie, $$\{0,1\}$$ depending on whether or not observation $$i$$ belongs to category $$j$$), then this is ANOVA.__
 + If there are some $$\{x_{ij}\}$$ of both kinds, this is __an analysis of covariance (ANCOVA).__
@@ -42,8 +42,9 @@ In this short introduction, we will review the main classes of ANOVA-types of an
 The 0ne-way ANOVA regers to the comparison of the  __means__ of several propulations. We denote the means by $$\mu_1, \mu_2, \cdots, \mu_k$$.
 
 __Main assumptions (to be verified!!):__
-+ The $$k$$ populations are normal with __equal variance $$\sigma^2$$.__  Equivalently: $$ y_{ij} = \mu_i + \epsilon_i $$ (with $$(i= 1, \cdots I,; \quad j = 1 \cdots J_i$$), with $$\epsilon_{ij} \sim N(0, \sigma^2)$$. That is, the $$y$$ should be a continuous variable.
-You can test this assumption using Levene's test for homogeneity of variances. If your data fails this assumption, you will need to not only carry out a Welch ANOVA instead of a one-way ANOVA, but also use a different post hoc test.
++  the $$y$$ should be a continuous variable.
++ The $$k$$ populations are normal with __equal variance $$\sigma^2$$.__  Equivalently: $$ y_{ij} = \mu_i + \epsilon_i $$ (with $$(i= 1, \cdots I,; \quad j = 1 \cdots J_i$$), with $$\epsilon_{ij} \sim N(0, \sigma^2)$$. 
+You can test the equal variance assumption using Levene's test for homogeneity of variances. If your data fails this assumption, you will need to not only carry out a Welch ANOVA instead of a one-way ANOVA, but also use a different post hoc test.
 + These $$\epsilon_{ij}$$ are independent.
 + There should be __no significant outliers__, which would deter the quality of the mean-fitting procedure (make sure to assess whether this is the case before running the anova).
 
