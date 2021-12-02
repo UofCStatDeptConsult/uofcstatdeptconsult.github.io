@@ -3,9 +3,14 @@ layout: page
 title: "Getting in touch and scheduling a consult"
 ---
 
+<<<<<<< HEAD
 ## Scheduling a Consult 
 
 ### (Note: Meeting schedule will resume after the winter break.)
+
+=======
+## Scheduling a Consult (Note: No meetings during Thanksgiving break 11/22-26)
+>>>>>>> c8496de190810c3a2333b53366556d01fb29813a
 
 
 To schedule a consult with our team of consultants, please choose an appointment time from the widget below (or using [the following link](https://appt.link/stats-consultings-meetings-bg7fl48m/60-minute-meeting)) and fill in the form. __Make sure to use your UChicago affilated email address__ when completing the form, or we won't be able to schedule a meeting! 
