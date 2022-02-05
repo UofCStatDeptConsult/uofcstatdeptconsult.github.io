@@ -57,7 +57,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
-  <figcaption>Seung Chul Eric Lee (MS)</figcaption>
+  <figcaption>Seung Chul Lee (MS)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
@@ -65,20 +65,21 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
-  <figcaption>Xiaomeng Wang (MS)</figcaption>
+  <figcaption>Xiaomeng Wang(MS)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Xiaohan Zhu (PhD)</figcaption>
   </div>
 </div>
+
 ### Monday-afternoon Team
 
 <div class="clearfix">
 
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
-  <figcaption>Sean O'Hagan (PhD)</figcaption>
+  <figcaption>Sean O'Hagan(PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
@@ -104,7 +105,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
-  <figcaption>Yuwei Cheng (MS)</figcaption>
+  <figcaption>Yuwei Cheng (PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
@@ -127,7 +128,6 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 ### Tuesday-afternoon Team
 
 <div class="clearfix">
-
 
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
@@ -185,7 +185,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
-  <figcaption>Soumyabrata Kundu (PhD)</figcaption>
+  <figcaption>Soumyabrata Kundu(PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
@@ -229,7 +229,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
-  <figcaption>Zimin Gan (PhD)</figcaption>
+  <figcaption>Ziming Gan (PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/weikuang.png" alt="" height="150"/>
@@ -243,6 +243,8 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Yuguan Wang (PhD)</figcaption>
   </div>
+ 
+</div>
  
 
 ### Our cnsultants for Autumn 2021: <br />
