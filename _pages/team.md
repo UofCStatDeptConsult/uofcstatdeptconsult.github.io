@@ -72,6 +72,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Xiaohan Zhu (PhD)</figcaption>
   </div>
 </div>
+
 ### Monday-afternoon Team
 
 <div class="clearfix">
