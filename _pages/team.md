@@ -47,6 +47,32 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 
 ### This quarter, we're happy to have among our consultants: <br />
 
+### Wednesday Team
+
+<div class="clearfix">
+<div class="img-container2">
+<img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+<figcaption>Tanmay Gupta (MS)</figcaption>
+</div>
+<div class="img-container2">
+<img src="{{ site.baseurl }}/images/bill.png" alt="" height="150"/>
+<figcaption>Bill Katsianos (PhD)</figcaption>
+</div>
+
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Annie Xie (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Ke Xu (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Jinwen Yang (PhD)</figcaption>
+  </div>
+</div>
+
 ### Friday1 Team
 
 <div class="clearfix">
