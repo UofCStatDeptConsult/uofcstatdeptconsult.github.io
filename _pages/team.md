@@ -73,6 +73,8 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
 </div>
 
+### Thursday Team
+
 ### Friday1 Team
 
 <div class="clearfix">
