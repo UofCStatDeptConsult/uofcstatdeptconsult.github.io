@@ -227,6 +227,8 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 
 ### Friday2 Team 
 
+<div class="clearfix">
+
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Ziming Gan (PhD)</figcaption>
@@ -246,8 +248,9 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
  
 </div>
  
+### We are running a quarterly Consulting Cup, and reward the consultants according to their performance. So please take a minute to give points to our consultants on our [satisfaction survey]() --- they are counting on your participation to win!
 
-### Our cnsultants for Autumn 2021: <br />
+### Our cnsultants for Autumn 2021: 
 
 ### Monday Team
 
@@ -378,7 +381,4 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Ruiting Tong (MS)</figcaption>
   </div>
 </div>
-
-
-### We are running a quarterly Consulting Cup, and reward the consultants according to their performance. So please take a minute to give points to our consultants on our [satisfaction survey]() --- they are counting on your participation to win!
 
