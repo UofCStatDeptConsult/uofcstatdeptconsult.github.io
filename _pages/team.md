@@ -47,18 +47,119 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 
 ### This quarter, we're happy to have among our consultants: <br />
 
+### Monday-morning Team
+
+<div class="clearfix">
+
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Lin Gui (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Seung Chul Eric Lee (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Sounak Paul (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Xiaomeng Wang (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Xiaohan Zhu (PhD)</figcaption>
+  </div>
+</div>
+### Monday-afternoon Team
+
+<div class="clearfix">
+
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Sean O'Hagan (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Cheng Peng (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Huy Tran (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Sam Tyler (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/yuepengyang.png" alt="" height="150"/>
+  <figcaption>Yuepeng Yang (PhD)</figcaption>
+  </div>
+</div>
+
+### Tuesday-morning Team
+
+<div class="clearfix">
+
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Yuwei Cheng (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Irina Cristali (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Yu Gui (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Misha Sohan (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Zhengyan Xu (MS)</figcaption>
+  </div>
+</div>
+
+### Tuesday-afternoon Team
+
+<div class="clearfix">
+
+
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>YoonHaeng Hur (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Kiho Park (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Devan Shan (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Jake Singleton (MS)</figcaption>
+  </div>
+  
+</div>
+
 ### Wednesday Team
 
 <div class="clearfix">
-<div class="img-container2">
-<img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
-<figcaption>Tanmay Gupta (MS)</figcaption>
-</div>
-<div class="img-container2">
-<img src="{{ site.baseurl }}/images/bill.png" alt="" height="150"/>
-<figcaption>Bill Katsianos (PhD)</figcaption>
-</div>
 
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Tanmay Gupta (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/bill.png" alt="" height="150"/>
+  <figcaption>Bill Katsianos (PhD)</figcaption>
+  </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Annie Xie (PhD)</figcaption>
@@ -71,9 +172,31 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Jinwen Yang (PhD)</figcaption>
   </div>
+  
 </div>
 
 ### Thursday Team
+
+<div class="clearfix">
+
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/joonsuk.png" alt="" height="150"/>
+  <figcaption>Joonsuk Kang (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Soumyabrata Kundu (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Ethan Lewis (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Yuhan Liu (PhD)</figcaption>
+  </div>
+  
+</div>
 
 ### Friday1 Team
 
@@ -83,22 +206,18 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Omar Ghattas (PhD)</figcaption>
   </div>
-
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Kulunu Dharmakeerthi (PhD)</figcaption>
   </div>
-
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Wentao Hu (PhD)</figcaption>
   </div>
-
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Peter Laurin (MS)</figcaption>
   </div>
-
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Cheuk Tsui (PhD)</figcaption>
@@ -106,10 +225,25 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
  
 </div>
 
-<br />
+### Friday2 Team 
 
-### Friday1 Team 
-
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Zimin Gan (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/weikuang.png" alt="" height="150"/>
+  <figcaption>Wei Kuang (PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Jingyang Lyu (MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Yuguan Wang (PhD)</figcaption>
+  </div>
+ 
 <br />
 
 
