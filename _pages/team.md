@@ -31,9 +31,7 @@ title: "Our Team"
 </head>
 
 
-
 The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
-
 
 <div class="clearfix">
   <div class="img-container">
@@ -49,6 +47,44 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 
 ### This quarter, we're happy to have among our consultants: <br />
 
+### Friday1 Team
+
+<div class="clearfix">
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Omar Ghattas (PhD)</figcaption>
+  </div>
+  </div>
+
+<div class="clearfix">
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Kulunu Dharmakeerthi (PhD)</figcaption>
+  </div>
+  </div>  
+</div>
+
+<div class="clearfix">
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Wentao Hu (PhD)</figcaption>
+  </div>
+  </div>
+
+<div class="clearfix">
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Peter Laurin (MS)</figcaption>
+  </div>
+  </div>
+
+<div class="clearfix">
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Cheuk Tsui (PhD)</figcaption>
+  </div>
+  </div>  
+### Our cnsultants for Autumn 2021: <br />
 
 ### Monday Team
 
