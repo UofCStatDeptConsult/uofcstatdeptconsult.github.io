@@ -84,6 +84,12 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Cheuk Tsui (PhD)</figcaption>
   </div>
   </div>  
+
+### Friday1 Team 
+
+<br />
+
+
 ### Our cnsultants for Autumn 2021: <br />
 
 ### Monday Team
