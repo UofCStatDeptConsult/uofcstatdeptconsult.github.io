@@ -78,7 +78,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 <div class="clearfix">
 
   <div class="img-container2">
-  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <img src="{{ site.baseurl }}/images/Ohagan_Sean.png" alt="" height="150"/>
   <figcaption>Sean O'Hagan(PhD)</figcaption>
   </div>
   <div class="img-container2">
