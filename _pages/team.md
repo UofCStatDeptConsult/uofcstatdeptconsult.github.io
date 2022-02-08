@@ -332,7 +332,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
 </div>
 
-### Thursday Team
+### Thursday Team --- The winning team!
 
 <div class="clearfix">
 <div class="img-container2">
