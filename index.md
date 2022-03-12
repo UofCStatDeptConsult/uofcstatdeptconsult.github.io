@@ -56,8 +56,9 @@ Find out more in our [About the consulting program](https://uofcstatdeptconsult.
 
 ### News and Announcements
 
-__We will in business for the fall quarter on September 30th!__ \\
-Consulting sessions can be booked  starting the first week of the Fall quarter.
+__We will in business once the quarter begins.__ \\
+We are operating during the academice quarters.
+Consulting sessions can be booked starting Wednesday of the first week of the quarter.
 
 __Consultants of the quarter__
 
@@ -65,17 +66,17 @@ Please join us in congratulating the team of Wei Kuang, Deqing Fu and Yanbing Yi
 
 <div class="clearfix">
   <div class="img-container">
-  <img src="{{ site.baseurl }}images/weikuang.png" alt="Wei Kuang, 3rd Year PhD"    height="300"/>
+  <img src="{{ site.baseurl }}images/weikuang.png" alt="Wei Kuang, 3rd Year PhD"    height="250"/>
   <figcaption  align="center">Wei Kuang</figcaption>
   <figcaption  align="center"><i>3rd Year PhD</i></figcaption>
   </div>
   <div class="img-container">
-  <img src="{{ site.baseurl }}images/deqingfu.png" alt="Deqing Fu, Advanced MS"  height="300" />
+  <img src="{{ site.baseurl }}images/deqingfu.png" alt="Deqing Fu, Advanced MS"  height="250" />
   <figcaption  align="center">    Deqing Fu     </figcaption>
   <figcaption  align="center"> <i>Advanced MS Student</i></figcaption>
   </div>
   <div class="img-container">
-  <img src="{{ site.baseurl }}images/yanbingyi.png" alt="Yanbing Yi"  height="300"/>
+  <img src="{{ site.baseurl }}images/yanbingyi.png" alt="Yanbing Yi"  height="250"/>
   <figcaption  align="center">Yanbing Yi</figcaption>
   <figcaption  align="center"> <i>Advanced MS Student</i></figcaption>
   </div>
