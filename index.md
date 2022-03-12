@@ -57,7 +57,7 @@ Find out more in our [About the consulting program](https://uofcstatdeptconsult.
 ### News and Announcements
 
 __We will be in business once the quarter begins.__ \\
-We are operating during the academice quarters.
+We are operating during the academic quarters.
 Consulting sessions can be booked starting Wednesday of the first week of the quarter.
 
 
@@ -69,7 +69,7 @@ Huanqing Wang, and Yuepeng Yang.
 
 <div class="clearfix">
   <div class="img-container">
-  <img src="{{ site.baseurl }}images/ConsultingCup-F21.png" alt="Consulting Cup F21" height="300"/>
+  <img src="{{ site.baseurl }}images/ConsultingCup-F21.jpng" alt="Consulting Cup F21" height="300"/>
   <figcaption  align="center">Consulting Cup Fall 2021 --- The Thurdsay Team</figcaption>
   <figcaption  align="center"><i>Melissa Adrian, Subhodh Kotekal, Kentaro Nakamura, 
 Huanqing Wang, and Yuepeng Yang</i></figcaption>
