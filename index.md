@@ -61,22 +61,35 @@ We are operating during the academic quarters.
 Consulting sessions can be booked starting Wednesday of the first week of the quarter.
 
 
-__Consultants of the quarter__
+__Consulting Cup Winter 2022__
 
-Please join us in congratulating the Fall 2021 Consulting Cup Award winner: 
-The Thursday Team of Melissa Adrian, Subhodh Kotekal, Kentaro Nakamura, 
-Huanqing Wang, and Yuepeng Yang.
+Congratulations to the Winter 2022 Consulting Cup Award winner: 
+The Wednesday Team!
 
 <div class="clearfix">
   <div class="img-container">
-  <img src="{{ site.baseurl }}images/ConsultingCup-F21.jpeg" alt="Consulting Cup F21" height="300"/>
-  <figcaption  align="center">Consulting Cup Fall 2021 --- The Thurdsay Team</figcaption>
+  <img src="{{ site.baseurl }}images/ConsultingCup-W22.jpeg" alt="Consulting Cup W22" width="600" height="400"/>
+  <figcaption  align="center">Consulting Cup Winter 2022 --- The Wednesday Team</figcaption>
+  <figcaption  align="center"><i>Tenmay Gupta, Bill Katsianos, Annie Xie, 
+  Ke Xu, and Jinwen Yang</i></figcaption>
+  </div>
+</div>
+
+__Consulting Cup Fall 2021__
+
+Congratulations to the Fall 2021 Consulting Cup Award winner: 
+The Thursday Team!
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="{{ site.baseurl }}images/ConsultingCup-F21.jpeg" alt="Consulting Cup F21" width="600" height="400"/>
+  <figcaption  align="center">Consulting Cup Fall 2021 --- The Thursday Team</figcaption>
   <figcaption  align="center"><i>Melissa Adrian, Subhodh Kotekal, Kentaro Nakamura, 
 Huanqing Wang, and Yuepeng Yang</i></figcaption>
   </div>
 </div>
 
-__Consultants of the quarter__
+__Consultants of the quarter (Summer 2021)__
 
 Please join us in congratulating the team of Wei Kuang, Deqing Fu and Yanbing Yi, for their expectional service as consultants over the summer! They have created an [R tutorial](https://uofcstatdeptconsult.github.io/images/tutorial-summary.html), which provides a good introduction and starting point to anyone looking to learn about R! 
 
