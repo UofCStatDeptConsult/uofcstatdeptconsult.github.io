@@ -56,9 +56,25 @@ Find out more in our [About the consulting program](https://uofcstatdeptconsult.
 
 ### News and Announcements
 
-__We will in business once the quarter begins.__ \\
+__We will be in business once the quarter begins.__ \\
 We are operating during the academice quarters.
 Consulting sessions can be booked starting Wednesday of the first week of the quarter.
+
+
+__Consultants of the quarter__
+
+Please join us in congratulating the Fall 2021 Consulting Cup Award winner: 
+The Thursday Team of Melissa Adrian, Subhodh Kotekal, Kentaro Nakamura, 
+Huanqing Wang, and Yuepeng Yang.
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="{{ site.baseurl }}images/ConsultingCup-F21.png" alt="Consulting Cup F21" height="300"/>
+  <figcaption  align="center">Consulting Cup Fall 2021 --- The Thurdsay Team</figcaption>
+  <figcaption  align="center"><i>Melissa Adrian, Subhodh Kotekal, Kentaro Nakamura, 
+Huanqing Wang, and Yuepeng Yang</i></figcaption>
+  </div>
+</div>
 
 __Consultants of the quarter__
 
