@@ -1,6 +1,9 @@
 ---
+title: "Home Page"
 layout: page
-title: Home Page
+output:
+  html_document:
+    df_print: paged
 ---
 
 <head>
@@ -69,7 +72,7 @@ Tenmay Gupta, Bill Katsianos, Annie Xie, Ke Xu, and Jinwen Yang!
 
 <div class="clearfix">
   <div class="img-container">
-  <img src="{{ site.baseurl }}images/ConsultingCup-W22.jpeg" alt="Consulting Cup W22" width="400" height="300"/>
+  <img src="{{ site.baseurl }}images/ConsultingCup-W22.jpeg" alt="Consulting Cup W22" width="100%" height="100%"/>
   <figcaption  align="center">Winter 2022 Wednesday Team</figcaption>
   </div>
 </div>
@@ -82,7 +85,7 @@ Huanqing Wang, and Yuepeng Yang!
 
 <div class="clearfix">
   <div class="img-container">
-  <img src="{{ site.baseurl }}images/ConsultingCup-F21.jpeg" alt="Consulting Cup F21" width="400" height="300"/>
+  <img src="{{ site.baseurl }}images/ConsultingCup-F21.jpeg" alt="Consulting Cup F21" width="100%" height="100%"/>
   <figcaption  align="center">Fall 2021 Thursday Team</figcaption>
   </div>
 </div>
