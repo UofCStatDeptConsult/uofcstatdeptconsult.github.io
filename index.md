@@ -69,7 +69,7 @@ Huanqing Wang, and Yuepeng Yang.
 
 <div class="clearfix">
   <div class="img-container">
-  <img src="{{ site.baseurl }}images/ConsultingCup-F21.jpng" alt="Consulting Cup F21" height="300"/>
+  <img src="{{ site.baseurl }}images/ConsultingCup-F21.jpeg" alt="Consulting Cup F21" height="300"/>
   <figcaption  align="center">Consulting Cup Fall 2021 --- The Thurdsay Team</figcaption>
   <figcaption  align="center"><i>Melissa Adrian, Subhodh Kotekal, Kentaro Nakamura, 
 Huanqing Wang, and Yuepeng Yang</i></figcaption>
