@@ -64,28 +64,26 @@ Consulting sessions can be booked starting Wednesday of the first week of the qu
 __Consulting Cup Winter 2022__
 
 Congratulations to the Winter 2022 Consulting Cup Award winner: 
-The Wednesday Team!
+The Wednesday Team of
+Tenmay Gupta, Bill Katsianos, Annie Xie, Ke Xu, and Jinwen Yang!
 
 <div class="clearfix">
   <div class="img-container">
-  <img src="{{ site.baseurl }}images/ConsultingCup-W22.jpeg" alt="Consulting Cup W22" width="600" height="400"/>
-  <figcaption  align="center">Consulting Cup Winter 2022 --- The Wednesday Team</figcaption>
-  <figcaption  align="center"><i>Tenmay Gupta, Bill Katsianos, Annie Xie, 
-  Ke Xu, and Jinwen Yang</i></figcaption>
+  <img src="{{ site.baseurl }}images/ConsultingCup-W22.jpeg" alt="Consulting Cup W22" width="400" height="300"/>
+  <figcaption  align="center">Winter 2022 Wednesday Team</figcaption>
   </div>
 </div>
 
 __Consulting Cup Fall 2021__
 
 Congratulations to the Fall 2021 Consulting Cup Award winner: 
-The Thursday Team!
+The Thursday Team of Melissa Adrian, Subhodh Kotekal, Kentaro Nakamura, 
+Huanqing Wang, and Yuepeng Yang!
 
 <div class="clearfix">
   <div class="img-container">
-  <img src="{{ site.baseurl }}images/ConsultingCup-F21.jpeg" alt="Consulting Cup F21" width="600" height="400"/>
-  <figcaption  align="center">Consulting Cup Fall 2021 --- The Thursday Team</figcaption>
-  <figcaption  align="center"><i>Melissa Adrian, Subhodh Kotekal, Kentaro Nakamura, 
-Huanqing Wang, and Yuepeng Yang</i></figcaption>
+  <img src="{{ site.baseurl }}images/ConsultingCup-F21.jpeg" alt="Consulting Cup F21" width="400" height="300"/>
+  <figcaption  align="center">Fall 2021 Thursday Team</figcaption>
   </div>
 </div>
 
