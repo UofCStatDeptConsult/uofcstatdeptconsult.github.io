@@ -45,7 +45,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 </div>
 
 
-### This quarter, we're happy to have among our consultants: <br />
+### This quarter (Spring 2022), we're happy to have among our consultants: <br />
 
 ### Monday Team (Sp22)
 
