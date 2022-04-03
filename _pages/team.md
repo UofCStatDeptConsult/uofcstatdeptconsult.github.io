@@ -45,7 +45,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 </div>
 
 
-### This quarter, we're happy to have among our consultants: <br />
+### This quarter (Spring 2022), we're happy to have among our consultants: <br />
 
 ### Monday Team (Sp22)
 
@@ -142,11 +142,11 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 <div class="clearfix">
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
-  <figcaption>Kulunu Dharmakeerthi (PhD)</figcaption>
+  <figcaption>Kulunu Dharmakeerthi(PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Ghattas_Omar.png" alt="" height="150"/>
-  <figcaption>Omar Ghattas (PhD)</figcaption>
+  <figcaption>Omar Ghattas(PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Gui_Lin.png" alt="" height="150"/>
@@ -154,11 +154,11 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
-  <figcaption>Xiaoyu Lei(MS/figcaption>
+  <figcaption>Xiaoyu Lei(MS)</figcaption>
   </div> 
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Tsui_Cheuk_To.png" alt="" height="150"/>
-  <figcaption>Cheuk Tsui (PhD)</figcaption>
+  <figcaption>Cheuk Tsui(PhD)</figcaption>
   </div>  
 </div>
 
@@ -172,7 +172,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
     <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Duan_Minxuan.png" alt="" height="150"/>
-  <figcaption>Alice Duan(MS))</figcaption>
+  <figcaption>Alice Duan(MS)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/angzhi.png" alt="" height="150"/>
@@ -180,20 +180,23 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/soham.png" alt="" height="150"/>
-  <figcaption>Soham Bonnerjee (PhD)</figcaption>
+  <figcaption>Soham Bonnerjee(PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Jia_Harrison.png" alt="" height="150"/>
-  <figcaption>Harrison Jia(MS))</figcaption>
+  <figcaption>Harrison Jia(MS)</figcaption>
   </div>
     <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Soumyabrata Kundu(PhD)</figcaption>
   </div>
 </div>
-<br><br>
+<br />
 
-### Our cnsultants for Winter 2022: 
+### We are running a quarterly Consulting Cup, and reward the consultants according to their performance. So please take a minute to give points to our consultants on our [satisfaction survey](https://docs.google.com/forms/d/e/1FAIpQLSfOMgrvVsl2WjW7RIzi0wV9ddZct2KXCx4aDsHGD08H2qaHZA/viewform) --- they are counting on your participation to win!
+<br />
+
+### Our cnsultants for Winter 2022: <br />
 
 ### Monday-morning Team
 
@@ -395,12 +398,9 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
  
 </div>
- 
-### We are running a quarterly Consulting Cup, and reward the consultants according to their performance. So please take a minute to give points to our consultants on our [satisfaction survey](https://docs.google.com/forms/d/e/1FAIpQLSfOMgrvVsl2WjW7RIzi0wV9ddZct2KXCx4aDsHGD08H2qaHZA/viewform) --- they are counting on your participation to win!
 <br />
 
-
-### Our cnsultants for Autumn 2021: 
+### Our cnsultants for Autumn 2021: <br />
 
 ### Monday Team
 
@@ -427,7 +427,6 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Johnson Zhang (MS)</figcaption>
   </div>
 </div>
-
 
 
 ### Tuesday Team
