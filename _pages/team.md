@@ -112,15 +112,15 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 <div class="clearfix">
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/aabesh.png" alt="" height="150"/>
-  <figcaption>Aabesh Bhattacharyya (PhD)</figcaption>
+  <figcaption>Aabesh Bhattacharyya(PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/soham.png" alt="" height="150"/>
-  <figcaption>Soham Bonnerjee (PhD)</figcaption>
+  <figcaption>Soham Bonnerjee(PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Liu_Yuhan.png" alt="" height="150"/>
-  <figcaption>Yuhan Liu (PhD)</figcaption>
+  <figcaption>Yuhan Liu(PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
