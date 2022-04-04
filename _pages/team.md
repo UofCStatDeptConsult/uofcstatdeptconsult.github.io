@@ -140,6 +140,11 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 ### Thursday Team (Sp22)
 
 <div class="clearfix">
+  <div class="clearfix">
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/Cheng_Yuwei.png" alt="" height="150"/>
+  <figcaption>Yuwei Cheng(PhD)</figcaption>
+  </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
   <figcaption>Kulunu Dharmakeerthi(PhD)</figcaption>
@@ -167,8 +172,8 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 
 <div class="clearfix">
   <div class="img-container2">
-  <img src="{{ site.baseurl }}/images/Cheng_Yuwei.png" alt="" height="150"/>
-  <figcaption>Yuwei Cheng(PhD)</figcaption>
+  <img src="{{ site.baseurl }}/images/soham.png" alt="" height="150"/>
+  <figcaption>Soham Bonnerjee(PhD)</figcaption>
   </div>
     <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Duan_Minxuan.png" alt="" height="150"/>
@@ -179,12 +184,12 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Andrew Fan(PhD)</figcaption>
   </div>
   <div class="img-container2">
-  <img src="{{ site.baseurl }}/images/soham.png" alt="" height="150"/>
-  <figcaption>Soham Bonnerjee(PhD)</figcaption>
-  </div>
-  <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Jia_Harrison.png" alt="" height="150"/>
   <figcaption>Harrison Jia(MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/subhod.png" alt="" height="150"/>
+  <figcaption>Subhodh Koketal(PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
