@@ -139,8 +139,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 
 ### Thursday Team (Sp22)
 
-<div class="clearfix">
-  <div class="clearfix">
+<div class="clearfix">  
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Cheng_Yuwei.png" alt="" height="150"/>
   <figcaption>Yuwei Cheng(PhD)</figcaption>
@@ -170,12 +169,12 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 
 ### Friday Team (Sp22)
 
-<div class="clearfix">
+<div class="clearfix">  
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/soham.png" alt="" height="150"/>
   <figcaption>Soham Bonnerjee(PhD)</figcaption>
   </div>
-    <div class="img-container2">
+  <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Duan_Minxuan.png" alt="" height="150"/>
   <figcaption>Alice Duan(MS)</figcaption>
   </div>
@@ -196,7 +195,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Soumyabrata Kundu(PhD)</figcaption>
   </div>
 </div>
-
+<br />
 
 ### We are running a quarterly Consulting Cup, and reward the consultants according to their performance. So please take a minute to give points to our consultants on our [satisfaction survey](https://docs.google.com/forms/d/e/1FAIpQLSfOMgrvVsl2WjW7RIzi0wV9ddZct2KXCx4aDsHGD08H2qaHZA/viewform) --- they are counting on your participation to win!
 <br />
