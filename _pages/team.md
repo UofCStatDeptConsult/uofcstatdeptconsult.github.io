@@ -170,10 +170,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 ### Friday Team (Sp22)
 
 <div class="clearfix">  
-  <div class="img-container2">
-  <img src="{{ site.baseurl }}/images/soham.png" alt="" height="150"/>
-  <figcaption>Soham Bonnerjee(PhD)</figcaption>
-  </div>
+
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Duan_Minxuan.png" alt="" height="150"/>
   <figcaption>Alice Duan(MS)</figcaption>
@@ -182,6 +179,10 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <img src="{{ site.baseurl }}/images/angzhi.png" alt="" height="150"/>
   <figcaption>Andrew Fan(PhD)</figcaption>
   </div>
+  <div class="img-container2">
+<img src="{{ site.baseurl }}/images/rohan.png" alt="" height="150"/>
+<figcaption>Rohan Hore(PhD)</figcaption>
+</div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Jia_Harrison.png" alt="" height="150"/>
   <figcaption>Harrison Jia(MS)</figcaption>
