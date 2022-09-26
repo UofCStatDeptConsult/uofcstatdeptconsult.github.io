@@ -59,10 +59,28 @@ Find out more in our [About the consulting program](https://uofcstatdeptconsult.
 
 ### News and Announcements
 
+__We are open!__ \\
+(Sign up for a consultation meeting at [here](https://appt.link/stats-consultings-meetings-bg7fl48m/60-minute-meeting))
+\\
+
+<!---
 __We will be in business once the quarter begins.__ \\
 We are operating during the academic quarters.
 Consulting sessions can be booked starting Wednesday of the first week of the quarter.
+--->
 
+__Consulting Cup Spring 2022__
+
+Congratulations to the Spring 2022 Consulting Cup Award winner: 
+The Thursday Team of
+Yuwei Cheng, Kulunu Dharmakeerthi, Omar Ghattas, Lin Gui, Xiaoyu Lei, Cheuk To Tsui!
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="{{ site.baseurl }}images/ConsultingCup-22.Sjpeg" alt="Consulting Cup S22" width="100%" height="100%"/>
+  <figcaption  align="center">Spring 2022 Thursday Team</figcaption>
+  </div>
+</div>
 
 __Consulting Cup Winter 2022__
 
