@@ -45,6 +45,148 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 </div>
 
 
+### This quarter (Autumn 2022), we're happy to have among our consultants: <br />
+
+### Monday Team (F22)
+
+<div class="clearfix">
+
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/Gui_Yu.png" alt="" height="150"/>
+  <figcaption>Yu Gui(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Jimmy Lederman(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Shu-Hsiang Wang(MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/Wang_Zihao.png" alt="" height="150"/>
+  <figcaption>Zihao Wang(PhD)</figcaption>
+  </div>
+   <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/Zhu_Xiaohan.png" alt="" height="150"/>
+  <figcaption>Xiaohan Zhu(PhD)</figcaption>
+  </div>
+</div>
+
+
+### Tuesday Team (F22)
+
+<div class="clearfix">
+
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/soham.png" alt="" height="150"/>
+  <figcaption>Soham Bonnerjee(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/Gan_Ziming.png" alt="" height="150"/>
+  <figcaption>Ziming Gan(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Soumyabrata Kundu(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Paath Sharma(MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Angelica Sun(MS)</figcaption>
+  </div>
+
+
+</div>
+
+### Wednesday Team (F22)
+
+<div class="clearfix">
+
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/melissa.png" alt="" height="150"/>
+  <figcaption>Melissa Adrian(PhD)</figcaption>
+  </div>
+    <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/Cheng_Yuwei.png" alt="" height="150"/>
+  <figcaption>Yuwei Cheng(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>John Hood(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>JungHo Lee(MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Kevin Wang(MS)</figcaption>
+  </div>
+</div>
+
+### Thursday Team (F22)
+
+<div class="clearfix">  
+
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/Hu_Wentao.png" alt="" height="150"/>
+  <figcaption>Wentao Hu(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Theo Man(MS)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/Park_Kiho.png" alt="" height="150"/>
+  <figcaption>Kiho Park(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/Tsui_Cheuk_To.png" alt="" height="150"/>
+  <figcaption>Cheuk Tsui(PhD)</figcaption>
+  </div> 
+    <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/Wang_Yuguan.png" alt="" height="150"/>
+  <figcaption>Yuguan Wang(PhD)</figcaption>
+  </div>
+</div>
+
+
+### Friday Team (F22)
+
+<div class="clearfix">  
+
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/aabesh.png" alt="" height="150"/>
+  <figcaption>Aabesh Bhattacharyya(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/rohan.png" alt="" height="150"/>
+  <figcaption>Rohan Hore(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Amber Lee(PhD)</figcaption>
+  </div>
+  <div class="img-container2">
+<img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+<figcaption>Chenfeng Li(MS)</figcaption>
+</div>
+  <div class="img-container2">
+  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <figcaption>Alan Zhong(MS)</figcaption>
+  </div>
+
+</div>
+<br />
+
+### We are running a quarterly Consulting Cup, and reward the consultants according to their performance. So please take a minute to give points to our consultants on our [satisfaction survey](https://docs.google.com/forms/d/e/1FAIpQLSfOMgrvVsl2WjW7RIzi0wV9ddZct2KXCx4aDsHGD08H2qaHZA/viewform) --- they are counting on your participation to win!
+<br />
+
+
 ### Our consultantts for Spring 2022: <br />
 
 ### Monday Team (Sp22)
@@ -196,9 +338,6 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Soumyabrata Kundu(PhD)</figcaption>
   </div>
 </div>
-<br />
-
-### We are running a quarterly Consulting Cup, and reward the consultants according to their performance. So please take a minute to give points to our consultants on our [satisfaction survey](https://docs.google.com/forms/d/e/1FAIpQLSfOMgrvVsl2WjW7RIzi0wV9ddZct2KXCx4aDsHGD08H2qaHZA/viewform) --- they are counting on your participation to win!
 <br />
 
 ### Our cnsultants for Winter 2022: <br />
