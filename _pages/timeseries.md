@@ -34,7 +34,7 @@ $$
 <br>
 
 then $$\mu_t$$ and $$\gamma(h,t)$$ are constant as a function of $$t$$. 
-One can similarly define the **Autocorrleation Function** (ACF)
+One can similarly define the **Autocorrleation Function** (ACF).
 
 ### Partial Autocorrelation
 
@@ -45,16 +45,17 @@ $$
 $$
 <br>
 
-where $$\hat{X}_{t+h}$ and $\hat{X}_{t}$$ are calculated by regressing them on $$X_{t+1}, \cdots, X_{t+h-1}$$.
+where $$\hat{X}_{t+h}$$ and $$\hat{X}_{t}$$ are calculated by regressing them on $$X_{t+1}, \cdots, X_{t+h-1}$$.
+
 
 # Different types of Stationary Time Series
 
-The most common types of stationary time series one comes across are AR($p$) and MA($q$) processes. 
+The most common types of stationary time series one comes across are AR($$p$$) and MA($$q$$) processes. 
 Both of them are linear time series. 
 
 ## AR(p) Series
 
-AR stands for **A**utoregressive **P**rocess, and $p$ denotes its order. 
+AR stands for **A**utoregressive **P**rocess, and $$p$$ denotes its order. 
 Mathematically, such a process will be represented as
 <br>
 
@@ -75,7 +76,7 @@ In contrast, the PACF function for AR(p) model, $$\phi_{hh}=0$$ for $$h>p$$.
 
 ## MA(q) Series
 
-Another popular stationary series is **M**oving **A**verage process of order $q$, written as <br>
+Another popular stationary series is **M**oving **A**verage process of order $$q$$, written as <br>
 
 $$
 X_t=\varepsilon_t + b_1 \varepsilon_{t-1} + \cdots + b_q \varepsilon_{t-q}
@@ -105,8 +106,8 @@ $$
 where $$a(x)=1-a_1x - \cdots a_p x^p$$, 
 and $$b(x)=1+b_1 x + \cdots b_q x^q$$ are two polynomials with no roots inside the unit circles. 
 
-## Non-linear Time Series
 
+## Non-linear Time Series
 
 Some other standard non-linear process are ARCH, GARCH, Volterra processes etc. 
 Standard Volterra process is stationary. 
@@ -123,7 +124,6 @@ such plots can be quite illuminative. The following table,
 taken from **Shumway** and **Stoffer**'s *Time Series Analysis and Its Applications with R Examples*, 
 summarizes the usual behaviour. 
 <br>
-
 
 $$
 \begin{aligned}
@@ -146,11 +146,13 @@ $$
 
 The ```acf1``` and ```acf2``` functions in **astsa** package plots the sample ACF and PACF plots in R. 
 
+
 # Decomposing a Time Series
 
-Often a time series will have three components. the first component is called **Trend**($$\mu_t$$), 
-the second component is called **Seasonality**($$s_t$$), 
-and the third component is called **Remainder**($$z_t$$). 
+Often a time series will have three components. 
+The first component is called **Trend** ($$\mu_t$$), 
+the second component is called **Seasonality** ($$s_t$$), 
+and the third component is called **Remainder** ($$z_t$$). 
 Usually we work with an *additive* model , implying our time series $$x_t$$ is decomposable as
 <br>
 
