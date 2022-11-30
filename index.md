@@ -59,7 +59,7 @@ Find out more in our [About the consulting program](https://uofcstatdeptconsult.
 
 ### News and Announcements
 
-__We are open!__ 
+__We are open during the academic quarters.__ 
 (Sign up for a consultation meeting at [here](https://appt.link/stats-consultings-meetings-bg7fl48m/60-minute-meeting)) \\
 
 <!---
@@ -68,6 +68,19 @@ We are operating during the academic quarters.
 Consulting sessions can be booked starting Wednesday of the first week of the quarter.
 --->
 
+
+__Consulting Cup Autumn 2022__
+
+Congratulations to the Autumn 2022 Consulting Cup Award winner: 
+The Monday Team of
+Yu Gui, Jimmy Lederman, Shu-Hsiang Wang, Zihao Wang, and Xiaohan Zhu!
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="{{ site.baseurl }}images/ConsultingCup-F22.jpg" alt="Consulting Cup F22" width="100%" height="100%"/>
+  <figcaption  align="center">Spring 2022 Thursday Team</figcaption>
+  </div>
+</div>
 
 __Consulting award Senior Consultants recognition of the year (2021-2022)__
 
