@@ -60,7 +60,7 @@ Find out more in our [About the consulting program](https://uofcstatdeptconsult.
 ### News and Announcements
 
 __We are open during the academic quarters__ 
-(Sign up for a consultation meeting at [here](https://appt.link/stats-consultings-meetings-bg7fl48m/60-minute-meeting))
+(Sign up for a consultation meeting at [here](https://appt.link/stats-consultings-meetings-bg7fl48m/))
 
 <!---
 __We will be in business once the quarter begins.__ \\
