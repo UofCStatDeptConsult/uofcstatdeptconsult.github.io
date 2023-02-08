@@ -84,11 +84,11 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Aaron Groff(MS)</figcaption>
   </div>
   <div class="img-container2">
-  <img src="{{ site.baseurl }}/images/lingui.png" alt="" height="150"/>
+  <img src="{{ site.baseurl }}/images/Gui_Lin.png" alt="" height="150"/>
   <figcaption>Lin Gui(PhD)</figcaption>
   </div>
   <div class="img-container2">
-  <img src="{{ site.baseurl }}/images/Hu_Wentao.jpg" alt="" height="150"/>
+  <img src="{{ site.baseurl }}/images/Hu_Wentao.png" alt="" height="150"/>
   <figcaption>Wentao Hu(PhD)</figcaption>
   </div>
  
@@ -107,7 +107,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
     <div class="img-container2">
   <img src="{{ site.baseurl }}/images/aabesh.png" alt="" height="150"/>
-  <figcaption>YAabesh Bhattacharyya(PhD)</figcaption>
+  <figcaption>Aabesh Bhattacharyya(PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.jpg" alt="" height="150"/>
@@ -115,7 +115,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/michelle.jpg" alt="" height="150"/>
-  <figcaption>Alexander VattakkattuMS)</figcaption>
+  <figcaption>Alexander Vattakkattu(MS)</figcaption>
   </div>
   
 </div>
@@ -129,7 +129,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Kulunu Dharmakeerthi(PhD)</figcaption>
   </div>
   <div class="img-container2">
-  <img src="{{ site.baseurl }}/images/Sharma_Parth.png" alt="" height="150"/>
+  <img src="{{ site.baseurl }}/images/Sharma_Parth.jpg" alt="" height="150"/>
   <figcaption>Paarth Shama(MS)</figcaption>
   </div>
   <div class="img-container2">
@@ -137,7 +137,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Annie Xie(PhD)</figcaption>
   </div>
   <div class="img-container2">
-  <img src="{{ site.baseurl }}/images/michelle.png" alt="" height="150"/>
+  <img src="{{ site.baseurl }}/images/Yang_Jinwen.png" alt="" height="150"/>
   <figcaption>Jinwen Yang(PhD)</figcaption>
   </div> 
     
@@ -161,7 +161,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Misha Sohan(PhD)</figcaption>
   </div>
   <div class="img-container2">
-<img src="{{ site.baseurl }}/images/zihaowang.jpg" alt="" height="150"/>
+<img src="{{ site.baseurl }}/images/zihaowang.png" alt="" height="150"/>
 <figcaption>Zihao Wang(PhD)</figcaption>
 </div>
   <div class="img-container2">
@@ -311,6 +311,9 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Alan Zhong(MS)</figcaption>
   </div>
 
+<button type="button" class="collapsible">AY 2021-2022</button>
+<div class="2021-2022">  
+  
 ### Our consultantts for Spring 2022: <br />
 
 ### Monday Team (Sp22)
@@ -799,3 +802,4 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
 </div>
 
+</div>
