@@ -310,8 +310,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 
 <br /><br />
 
-<button type="button" class="collapsible">AY 2021-2022</button>
-<div class="content">  
+<details><summary>AY 2021-2022</summary>
   
 ### Our consultantts for Spring 2022: <br />
 
@@ -801,21 +800,4 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
 </div>
 
-</div>
-  
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
+</details>
