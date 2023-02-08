@@ -308,7 +308,8 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Alan Zhong(MS)</figcaption>
   </div>
 
-<br /><br />
+
+### Past academid years <br />
 
 <details><summary>AY 2021-2022</summary>
   
