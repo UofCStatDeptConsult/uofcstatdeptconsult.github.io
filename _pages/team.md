@@ -57,7 +57,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Michelle.jpg" alt="" height="150"/>
-  <figcaption>Raphaael Rossellini(PhD)</figcaption>
+  <figcaption>Raphael Rossellini(PhD)</figcaption>
   </div>
   <div class="img-container2">
   <img src="{{ site.baseurl }}/images/Tsui_Cheuk_To.png" alt="" height="150"/>
@@ -92,9 +92,6 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Wentao Hu(PhD)</figcaption>
   </div>
  
-</div>
-
-
 </div>
 
 ### Wednesday Team (W23)
@@ -144,7 +141,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 </div>
 
 
-### Friday Team (F22)
+### Friday Team (W23)
 
 <div class="clearfix">  
 
@@ -311,8 +308,10 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Alan Zhong(MS)</figcaption>
   </div>
 
+<br /><br />
+
 <button type="button" class="collapsible">AY 2021-2022</button>
-<div class="2021-2022">  
+<div class="content">  
   
 ### Our consultantts for Spring 2022: <br />
 
@@ -803,3 +802,20 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 </div>
 
 </div>
+  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
