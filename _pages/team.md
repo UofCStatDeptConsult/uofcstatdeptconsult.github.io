@@ -56,7 +56,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
   <figcaption>Ziming Gan(PhD)</figcaption>
   </div>
   <div class="img-container2">
-  <img src="{{ site.baseurl }}/Rossellini_Raphael.png" alt="" height="150"/>
+  <img src="{{ site.baseurl }}/images/Rossellini_Raphael.png" alt="" height="150"/>
   <figcaption>Raphael Rossellini(PhD)</figcaption>
   </div>
   <div class="img-container2">
@@ -169,6 +169,7 @@ The Statistics workshop is currently led by Profs. Claire Donnat and Mei Wang.
 
 <details><summary>Autumn 2022</summary>  
 <p> 
+<br />    
 
 ### Our consultants for Autumn 2022: <br />
 
