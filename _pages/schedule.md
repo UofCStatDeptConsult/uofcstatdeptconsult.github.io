@@ -3,6 +3,17 @@ layout: page
 title: "Getting in touch and scheduling a consult"
 ---
 
+## Walkins
+
+As of Spring 2023, we will allow walk-in consultations. Visit our consultants during their office hours:
++ __Mondays, 5:45pm-6:45pm, Jones 308__ 
++ __Tuesdays, 5:00pm-6:00pm, Jones 304__ 
++ __Wednesdays, 3:00pm-4:00pm, Jones 111__
++ __Thursdays, 11:00am-12:00pm, Jones 308__  
++ __Fridays, 10:30am-12:30Am, Jones 308__ 
+
+__Note: after 5pm, the Jones building has restricted entry, but you can access the building via Kent. If you struggle to find your way in, email Claire: cdonnat@uchicago.edu.__
+
 ## Scheduling a Consult 
 
 To schedule a consult with our team of consultants, please choose an appointment time from the widget below (or using [the following link](https://appt.link/stats-consultings-meetings-bg7fl48m/60-minute-meeting)) and fill in the form. __Make sure to use your UChicago affilated email address__ when completing the form, or we won't be able to schedule a meeting! 
