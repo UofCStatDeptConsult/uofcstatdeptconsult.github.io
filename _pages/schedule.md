@@ -3,7 +3,7 @@ layout: page
 title: "Getting in touch and scheduling a consult"
 ---
 
-## Walkins
+## Walk-ins
 
 As of Spring 2023, we will allow walk-in consultations. Visit our consultants during their office hours:
 + __Mondays, 5:45pm-6:45pm, Jones 308__ 
