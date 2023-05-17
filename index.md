@@ -76,7 +76,7 @@ The Friday Team of Sean O'Hagan, Kiho Park, Misha Sohan, Zihao Wang, and Matthew
 
 <div class="clearfix">
   <div class="img-container">
-  <img src="{{ site.baseurl }}images/W23-Cup-FridayTeam.jpg" alt="Consulting Cup W23" width="100%" height="100%"/>
+  <img src="{{ site.baseurl }}images/w23-Cup-FridayTeam.jpg" alt="Consulting Cup W23" width="100%" height="100%"/>
   <figcaption  align="center">Winter 2023 Friday Team</figcaption>
   </div>
 </div>
