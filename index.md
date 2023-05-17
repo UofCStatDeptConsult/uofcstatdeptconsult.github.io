@@ -69,6 +69,18 @@ Consulting sessions can be booked starting Wednesday of the first week of the qu
 --->
 
 
+__Consulting Cup Winter 2023__
+
+Congratulations to the Winter Consulting Cup Award winner: 
+The Friday Team of Sean O'Hagan, Kiho Park, Misha Sohan, Zihao Wang, and Matthew Yang!
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="{{ site.baseurl }}images/W23-Cup-FridayTeam.jpg" alt="Consulting Cup W23" width="100%" height="100%"/>
+  <figcaption  align="center">Winter 2023 Friday Team</figcaption>
+  </div>
+</div>
+
 __Consulting Cup Autumn 2022__
 
 Congratulations to the Autumn 2022 Consulting Cup Award winner: 
