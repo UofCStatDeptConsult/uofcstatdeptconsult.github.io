@@ -9,7 +9,7 @@ As of Fall 2023, we will allow walk-in consultations. Visit our consultants duri
 + __Mondays,12:30pm-2pm, Jones 304__ 
 + __Wednesdays, 4:30pm-6:00pm, Jones 304__
 + __Thursdays, 4:30pm-6:00pm, Jones 304__  
-+ __Fridays, 12:00pm-1:30pm, Jones 308__ 
++ __Fridays, 12:00pm-1:30pm, Jones 304__ 
 
 __Note: after 5pm, the Jones building has restricted entry, but you can access the building via Kent. If you struggle to find your way in, email Claire: cdonnat@uchicago.edu.__
 
