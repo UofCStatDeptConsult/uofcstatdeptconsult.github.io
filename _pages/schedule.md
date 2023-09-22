@@ -5,12 +5,11 @@ title: "Getting in touch and scheduling a consult"
 
 ## Walk-ins
 
-As of Spring 2023, we will allow walk-in consultations. Visit our consultants during their office hours:
-+ __Mondays, 5:45pm-6:45pm, Jones 308__ 
-+ __Tuesdays, 5:00pm-6:00pm, Jones 304__ 
-+ __Wednesdays, 3:00pm-4:00pm, Jones 111__
-+ __Thursdays, 11:00am-12:00pm, Jones 308__  
-+ __Fridays, 10:30am-12:30Am, Jones 308__ 
+As of Fall 2023, we will allow walk-in consultations. Visit our consultants during their office hours:
++ __Mondays,12:30pm-2pm, Jones 304__ 
++ __Wednesdays, 4:30pm-6:00pm, Jones 304__
++ __Thursdays, 4:30pm-6:00pm, Jones 304__  
++ __Fridays, 12:00pm-1:30pm, Jones 308__ 
 
 __Note: after 5pm, the Jones building has restricted entry, but you can access the building via Kent. If you struggle to find your way in, email Claire: cdonnat@uchicago.edu.__
 
