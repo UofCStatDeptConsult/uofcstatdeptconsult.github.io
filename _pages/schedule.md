@@ -13,9 +13,13 @@ As of Fall 2023, we will allow walk-in consultations. Visit our consultants duri
 
 __Note: after 5pm, the Jones building has restricted entry, but you can access the building via Kent. If you struggle to find your way in, email Claire: cdonnat@uchicago.edu.__
 
+
+
+
+
 ## Scheduling a Consult 
 
-To schedule a consult with our team of consultants, please choose an appointment time from the widget below (or using [the following link](https://appt.link/stats-consultings-meetings-bg7fl48m/60-minute-meeting)) and fill in the form. __Make sure to use your UChicago affilated email address__ when completing the form, or we won't be able to schedule a meeting! 
+You can also schedule a consult beforehand to provide our consultants with additional information before the actual meeting. To schedule a consult with our team of consultants, please choose an appointment time from the widget below (or using [the following link](https://appt.link/stats-consultings-meetings-bg7fl48m/60-minute-meeting)) and fill in the form. __Make sure to use your UChicago affilated email address__ when completing the form, or we won't be able to schedule a meeting! 
 
 
 After your form is submitted, our consultants will be in touch via email with the details for your remote consulting appointment, to be conducted via a teleconferencing app such as Zoom. We aim to give an initial response within 24 hours, and to schedule an initial meeting within the same week your request is received.
