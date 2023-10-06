@@ -6,7 +6,7 @@ title: "Getting in touch and scheduling a consult"
 ## Walk-ins
 
 As of Fall 2023, we will allow walk-in consultations. Visit our consultants during their office hours:
-+ __Mondays,12:30pm-2pm, Jones 304__ 
++ __Tuesdays,2:00pm-3:30pm, Kent 101__ 
 + __Wednesdays, 4:30pm-6:00pm, Jones 304__
 + __Thursdays, 4:30pm-6:00pm, Jones 304__  
 + __Fridays, 12:00pm-1:30pm, Jones 304__ 
