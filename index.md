@@ -69,6 +69,23 @@ Consulting sessions can be booked starting Wednesday of the first week of the qu
 --->
 
 
+### News and Announcements (2022-2023)  
+ 
+__Consulting award Senior Consultants recognition of the year (2021-2022)__
+
+Please join us in congratulating the yearly consulting award winner
+Soumyabrata Kundu, 
+voted by the student consultants for his outstanding work in his consulting teams.
+A round of applause to the recipients of the Senior Consultant recognition
+Amber Lee, Raphael Rossellini,
+recommended by student consultants and faculty for their 
+consistent, excellent contributions. 
+
+__Consulting Cup Spring 2023__
+
+Congratulations to the Winter Consulting Cup Award winner: 
+The Friday Team of Or Goldreich, Paarth Sharma, Alexander Vattakkattu, Yuguan Wang, and Annie Xie!
+
 __Consulting Cup Winter 2023__
 
 Congratulations to the Winter Consulting Cup Award winner: 
